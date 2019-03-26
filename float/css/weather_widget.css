@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+body{
+    background: url("../img/Cubes_Layer 4.png") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.shadow-container{
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: url("../img/Cubes_Layer 2.png") no-repeat;
+    background-size: contain;
+}
+
+.shadow-container .city-block{
+    height: 205px;
+    width: 205px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: -2px;
+}
+
+.chicago{
+    background: url("../img/chicago_back.png");
+}
+
+.seattle{
+    background: url("../img/seattle_back.png");
+}
+
+.brooklyn{
+    background: url("../img/brooklyn_back.png");
+}
+
+.portland{
+    background: url("../img/portland_back.png");
+}
+
+.week{
+    background: url("../img/week_back_1.png");
+}
+
+.san-jose{
+    background: url("../img/san_jose.png");
+}
+
+.city-block_container{
+    padding: 40px 8px;
+    text-align: center;
+}
+
+.city-block_container img{
+    margin-bottom: 15px;
+}
+
+.week .week_block-img, .week .week_weather-info{
+    text-align: center;
+}
+
+.week .week_block-img img{
+    width: 63px;
+    padding-top: 20px;
+}
+
+.city-block_container>img{
+    width: 90px;
+    height:76px;
+}
+
+.week_weather-info{
+    background: url("../img/week_back_2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 12px;
+}
+
+.week_block-img, .week_weather-info{
+    height: 50%;
+}
+
+
+.week_weather-info>div{
+    padding: 10px 5px;
+}
+
+.week_weather-info>div>p{
+    margin-bottom: 5px;
+}
+
+.week_weather-info>div>img{
+    width: 24px;
+    height: 18px;
+}
+
+
+@media all and (max-width: 768px){
+    .shadow-container{
+        max-width: 100%;
+        height: auto;
+        background-position: center;
+    }
+
+    .shadow-container .city-block{
+        max-width: 26%;
+    }
+
+    .city-block_container > img, .week .week_block-img img{
+        max-width: 70%;
+        height: auto;
+    }
+
+    .week .week_block-img img{
+        max-width: 35%;
+        padding-top: 5px;
+    }
+
+    .city-block_container{
+        padding: 10% 15%;
+    }
+
+    .shadow-container .city-block{
+        height: auto;
+    }
+
+    p{
+        font-size: 8px;
+    }
+
+    .week_weather-info > div > p{
+        font-size: 5px;
+    }
+
+    .week_weather-info > div > img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .week_weather-info > div {
+        padding: 2px 4px 0px 4px;
+
+    }
+
+    .city-block_container img{
+        margin-bottom: 0px;
+    }
+}
+
+@media all and (max-width: 300px){
+    .week_weather-info > div {
+
+        padding: 2px 0px 0px 2px;
+
+    }
+
+    .week_weather-info > div > img {
+        max-width: 60%;
+    }
+
+    .week_weather-info > div > p{
+        margin-bottom: 0px;
+    }
+}
