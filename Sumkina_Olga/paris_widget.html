@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Paris Widget</title>
+	<link href="css/paris.css" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+<body>
+	<div id='widget_container'>
+		<div id="weather_info">
+			<div id="current_date">
+				<p id='day_of_week'>Friday</p>
+				<p id='date'>August, 23rd</p>
+			</div>
+			<div id="current_weather">
+				<span id="grad">12 &deg;</span><br>
+				<span id='location'>Paris, France</span><br>
+				<span id='wind'>
+					<img id='wind_icon' src='img/paris/Wind.png' alt='wind icon for today'>
+					<span>14</span> mph
+				</span>
+			</div>
+		</div>
+		
+		<div id="forecast">
+			<div class='slider'>
+				<img src='img/paris/Back.png' alt='back button' role='button'>
+			</div>
+			<div class='day' id='mon'>
+				<span>Monday</span>
+				<img src='img/paris/Rain.png' alt='rain icon'>
+				<span>10 &deg;</span>
+			</div>
+			<div class='day' id='tue'>
+				<span>Tuesday</span>
+				<img src='img/paris/Overcast.png' alt='Overcast icon'>
+				<span>15 &deg;</span>
+			</div>
+			<div class='day' id='wed'>
+				<span>Wednesday</span>
+				<img src='img/paris/Sunny.png' alt='sun icon'>
+				<span>23 &deg;</span>
+			</div>
+			<div class='day' id='thu'>
+				<span>Thursday</span>
+				<img src='img/paris/Cloudy.png' alt='cloudy icon'>
+				<span> 18 &deg;</span>
+			</div>
+			<div class='slider'>
+				<img src='img/paris/Next.png' alt='next button' role='button'>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
