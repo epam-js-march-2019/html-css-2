@@ -24,6 +24,17 @@ body{
     background-size: contain;
 }
 
+.shadow-container .inner-container{
+    max-width: 620px;
+    max-height: 410px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
 .shadow-container .city-block{
     height: 205px;
     width: 205px;
@@ -92,8 +103,18 @@ body{
 }
 
 
-.week_weather-info>div{
-    padding: 10px 5px;
+.week_weather-info>div>div{
+     padding: 10px 5px;
+     display: block;
+     float: left;
+ }
+
+.week_weather-info .week_weather-info-inner{
+    max-width: 160px;
+    display: block;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-top: 10px;
 }
 
 .week_weather-info>div>p{
@@ -104,6 +125,8 @@ body{
     width: 24px;
     height: 18px;
 }
+
+
 
 
 @media all and (max-width: 768px){
