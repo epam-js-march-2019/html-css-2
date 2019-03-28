@@ -161,7 +161,16 @@ body{
 
     .shadow-container .city-block{
         height: 50%;
-        max-width: 33%;
+        max-width: 33.33%;
+        margin-right: 0px;
+    }
+
+    .shadow-container .city-block::before {
+
+        content: "";
+        display: block;
+        margin-top: 100%;
+
     }
 
     p{
