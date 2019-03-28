@@ -6,7 +6,7 @@
 }
 
 body{
-    background: url("../img/Cubes_Layer 4.png") no-repeat;
+    background: url("../img/background.png") no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -20,7 +20,7 @@ body{
     bottom: 0;
     left: 0;
     margin: auto;
-    background: url("../img/Cubes_Layer 2.png") no-repeat;
+    background: url("../img/special-shadow.png") no-repeat;
     background-size: contain;
     display: flex;
     flex-wrap: wrap;

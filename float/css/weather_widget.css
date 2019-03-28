@@ -6,7 +6,7 @@
 }
 
 body{
-    background: url("../img/Cubes_Layer 4.png") no-repeat;
+    background: url("../img/background.png") no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -20,12 +20,12 @@ body{
     bottom: 0;
     left: 0;
     margin: auto;
-    background: url("../img/Cubes_Layer 2.png") no-repeat;
+    /*background: url("../img/special-shadow.png") no-repeat;*/
     background-size: contain;
 }
 
 .shadow-container .inner-container{
-    max-width: 620px;
+    max-width: 610px;
     max-height: 410px;
     position: absolute;
     top: 0;
@@ -33,6 +33,7 @@ body{
     bottom: 0;
     left: 0;
     margin: auto;
+    box-shadow: 0px 0px 50px 15px rgb(0, 0, 0);
 }
 
 .shadow-container .city-block{
@@ -45,27 +46,27 @@ body{
 }
 
 .chicago{
-    background: url("../img/chicago_back.png");
+    background-color: #00c2e3;
 }
 
 .seattle{
-    background: url("../img/seattle_back.png");
+    background-color: #59da99;
 }
 
 .brooklyn{
-    background: url("../img/brooklyn_back.png");
+    background-color: #7557f8;
 }
 
 .portland{
-    background: url("../img/portland_back.png");
+    background-color: #eac24c;
 }
 
 .week{
-    background: url("../img/week_back_1.png");
+    background-color: #e65579;
 }
 
 .san-jose{
-    background: url("../img/san_jose.png");
+    background-color: #cc70d8;
 }
 
 .city-block_container{
@@ -92,7 +93,7 @@ body{
 }
 
 .week_weather-info{
-    background: url("../img/week_back_2.png");
+    background-color: #cc4a6c;
     background-repeat: no-repeat;
     background-size: cover;
     font-size: 12px;
