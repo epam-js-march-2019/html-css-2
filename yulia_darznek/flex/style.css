@@ -30,15 +30,13 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  min-height: 160px;
+  height: 160px;
   box-sizing: border-box;
 
   font-size: 16px;
   text-transform: uppercase;
-}
 
-.wheather__item {
-  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.1), inset 1px 1px 0 rgba(255, 255, 255, 0.3), inset -2px 0 0 rgba(0, 0, 0, 0.1) ;
+  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.1), inset 1px 1px 0 rgba(255, 255, 255, 0.3), inset -2px 0 0 rgba(0, 0, 0, 0.1);
 }
 
 .wheather__item_blue {
@@ -65,27 +63,46 @@ body {
   background-color: #bd54cd;
 }
 
+.wheather__text {
+  margin: 0;
+}
+
+.wheather__icon {
+  margin-bottom: 25px;
+}
+
 .wheather__item_info {
   font-size: 12px;
   justify-content: flex-start;
 }
 
+.wheather__item_info .wheather__icon {
+  margin-bottom: 0;
+}
+
 .wheather__top {
   width: 100%;
   height: 50%;
-  min-height: 102px;
   display: flex;
   align-items: center;
   justify-content: center
 }
 
 .wheather__table {
-  height: 103px;
+  height: 50%;
   width: 100%;
   padding: 15px;
   text-align: center;
   box-sizing: border-box;
   box-shadow: inset 0 0 35px rgba(39, 36, 37, 0.22);
+}
+
+.table td {
+  padding: 0
+}
+
+.table__head td {
+  padding-bottom: 9px;
 }
 
 @media (min-width: 481px) {
@@ -107,20 +124,25 @@ body {
 
   .wheather__item {
     width: 50%;
-    min-height: 205px
+    height: 205px
   }
 }
 
 @media (min-width: 800px) {
   .wheather {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
     background-image: url("../img/bg.jpg");
+    background-size: auto;
+    background-position: center;
   }
   
   .wheather__list {
-    width: 70%;
-    min-width: 612px;
-    max-width: 800px;
-    padding: 40px 0;
+    width: 615px;
   }
   
   .wheather__item {
