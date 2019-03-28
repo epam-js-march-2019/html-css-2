@@ -20,7 +20,6 @@ body{
     bottom: 0;
     left: 0;
     margin: auto;
-    /*background: url("../img/special-shadow.png") no-repeat;*/
     background-size: contain;
 }
 
@@ -137,6 +136,11 @@ body{
         background-position: center;
     }
 
+    .inner-container{
+        max-width: 70% !important;
+        max-height: 25%;
+    }
+
     .shadow-container .city-block{
         max-width: 26%;
     }
@@ -156,7 +160,8 @@ body{
     }
 
     .shadow-container .city-block{
-        height: auto;
+        height: 50%;
+        max-width: 33%;
     }
 
     p{
