@@ -4,6 +4,7 @@
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
+
 body{
     background: url("../img/background.png") no-repeat;
     background-size: cover;
@@ -11,7 +12,7 @@ body{
 }
 
 
-.inner-container{
+.shadow-container{
     box-shadow: 0px 0px 50px 15px rgb(0, 0, 0);
     display: grid;
     display: -ms-grid;
@@ -27,15 +28,15 @@ body{
     bottom: 0;
     left: 0;
     margin: auto;
+    background-size: contain;
 }
 
 
-.inner-container_city-block{
-    height: auto;
-    width: 100%;
+.shadow-container .city-block{
+    height: 205px;
+    width: 205px;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-right: -2px;
 }
 
 .chicago{
@@ -80,26 +81,20 @@ body{
     padding-top: 20px;
 }
 
-.city-block_container > img {
-    max-width: 100%;
-    height: auto;
-    margin: 10px auto;
-
+.city-block_container>img{
+    width: 90px;
+    height:76px;
 }
 
-
 .week_weather-info{
-    background: url("../img/week_back_2.png");
+    background-color: #cc4a6c;
     background-repeat: no-repeat;
-
     background-size: cover;
 
     display: grid;
 
     font-size: 12px;
-
     justify-content: center;
-
     align-items: center;
 
     grid-template-columns: 25% 25% 25% 25%;
@@ -125,28 +120,23 @@ body{
     height: 18px;
 }
 
+
 @media all and (max-width: 768px){
-    .inner-container{
-        width: 80%;
+    .shadow-container{
+        height: auto;
+        width: min-content;
+        margin-bottom: 100px;
+        margin-top: 100px;
+        position: relative;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto auto;
     }
-
-    .city-block_container {
-        padding: 35px 8px;
-
-    }
-
 }
 
-@media all and (max-width: 478px){
-    p{
-        font-size: 10px;
-    }
-    .week_weather-info > div > p {
-        font-size: 8px;
-    }
 
-    img {
-        max-width: 100%;
-        height: auto !important;
+@media all and (max-width: 500px){
+    .shadow-container{
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto auto auto auto;
     }
 }

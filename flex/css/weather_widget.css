@@ -12,59 +12,52 @@ body{
 }
 
 .shadow-container{
-    width: 800px;
-    height: 600px;
+    width: 615px;
+    height: 410px;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     margin: auto;
-    background: url("../img/special-shadow.png") no-repeat;
     background-size: contain;
     display: flex;
     flex-wrap: wrap;
     align-content:center;
     justify-content: center;
+    box-shadow: 0px 0px 50px 15px rgb(0, 0, 0);
 }
 
-.inner-container{
-    display: flex;
-    flex-wrap: wrap;
-    align-content:center;
-    justify-content: center;
-}
 
 .shadow-container .city-block{
     height: 205px;
     width: 205px;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-right: -2px;
 }
 
 .chicago{
-    background: url("../img/chicago_back.png");
+    background-color: #00c2e3;
 }
 
 .seattle{
-    background: url("../img/seattle_back.png");
+    background-color: #59da99;
 }
 
 .brooklyn{
-    background: url("../img/brooklyn_back.png");
+    background-color: #7557f8;
 }
 
 .portland{
-    background: url("../img/portland_back.png");
+    background-color: #eac24c;
 }
 
 .week{
-    background: url("../img/week_back_1.png");
+    background-color: #e65579;
 }
 
 .san-jose{
-    background: url("../img/san_jose.png");
+    background-color: #cc70d8;
 }
 
 .city-block_container{
@@ -91,7 +84,7 @@ body{
 }
 
 .week_weather-info{
-    background: url("../img/week_back_2.png");
+    background-color: #cc4a6c;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -121,68 +114,26 @@ body{
 
 @media all and (max-width: 768px){
     .shadow-container{
-        max-width: 100%;
         height: auto;
-        background-position: center;
-    }
-
-    .shadow-container .city-block{
-        max-width: 26%;
-    }
-
-    .city-block_container > img, .week .week_block-img img{
+        margin-bottom: 100px;
+        margin-top: 100px;
+        position: relative;
         max-width: 70%;
-        height: auto;
+
+        -ms-box-orient: horizontal;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -moz-flex;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+        -webkit-align-items: stretch;
+        align-items: stretch;
     }
 
-    .week .week_block-img img{
-        max-width: 35%;
-        padding-top: 5px;
-    }
-
-    .city-block_container{
-        padding: 10% 15%;
-    }
-
-    .shadow-container .city-block{
-        height: auto;
-    }
-
-    p{
-        font-size: 8px;
-    }
-
-    .week_weather-info > div > p{
-        font-size: 5px;
-    }
-
-    .week_weather-info > div > img{
-        max-width: 100%;
-        height: auto;
-    }
-
-    .week_weather-info > div {
-        padding: 2px 4px 0px 4px;
-
-    }
-
-    .city-block_container img{
-        margin-bottom: 0px;
-    }
-}
-
-@media all and (max-width: 300px){
-    .week_weather-info > div {
-
-        padding: 2px 0px 0px 2px;
-
-    }
-
-    .week_weather-info > div > img {
-        max-width: 60%;
-    }
-
-    .week_weather-info > div > p{
-        margin-bottom: 0px;
+    .city-block{
+        flex: auto;
     }
 }
