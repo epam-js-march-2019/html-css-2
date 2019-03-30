@@ -135,6 +135,6 @@ body{
     }
 
     .shadow-container .shadow-container_city-block{
-        width: 205px;
+        width: 100%;
     }
 }
