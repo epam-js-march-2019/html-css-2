@@ -25,7 +25,7 @@ body{
 }
 
 
-.shadow-container .city-block{
+.shadow-container .shadow-container_city-block{
     height: 205px;
     width: 205px;
     background-size: cover;
@@ -95,10 +95,11 @@ body{
 
 
 .week_weather-info>div{
-    padding: 10px 5px;
     float: left;
     display: block;
-    padding: 20px 12px;
+    padding: 20px 0px;
+    width: 25%;
+
 }
 
 .week_weather-info>div>p{
@@ -120,7 +121,7 @@ body{
         position: relative;
     }
 
-    .shadow-container .city-block{
+    .shadow-container .shadow-container_city-block{
         width: 50%;
     }
 }
@@ -133,7 +134,7 @@ body{
         height: 1230px;
     }
 
-    .shadow-container .city-block{
+    .shadow-container .shadow-container_city-block{
         width: 205px;
     }
 }

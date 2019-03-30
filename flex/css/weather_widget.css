@@ -29,7 +29,7 @@ body{
 }
 
 
-.shadow-container .city-block{
+.shadow-container .shadow-container_city-block{
     height: 205px;
     width: 205px;
     background-size: cover;
@@ -133,7 +133,7 @@ body{
         align-items: stretch;
     }
 
-    .city-block{
+    .shadow-container_city-block{
         flex: auto;
     }
 }
