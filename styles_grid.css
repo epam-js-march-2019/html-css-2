@@ -1,0 +1,249 @@
+html,body{
+    margin:0;
+}
+
+.backgroundContainer{
+    background: url('../images/forest.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width:600px){
+    .widgetWindow{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+        display: grid;
+        display: -ms-grid;
+        grid-template-rows: repeat(6, 205px);
+        -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 205px;
+        -ms-grid-columns: 1fr;
+        width: 205px;
+        height: 1230px;
+        font-family: Verdana;
+        font-weight: bold;
+        color: white;
+        margin: 95px;
+    }
+
+    .aqua{
+        background-color: rgb(6,179,219);
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+
+    .green{
+        background-color: rgb(78,212,134);
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+    }
+
+    .blue{
+        background-color: rgb(97,57,246);
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+
+    .yellow{
+        background-color: rgb(227,182,61);
+        -ms-grid-row: 4;
+        -ms-grid-column: 1;
+    }
+
+    .red{
+        background-color: rgb(220,61,102);
+        -ms-grid-row: 5;
+        -ms-grid-column: 1;
+    }
+
+    .purple{
+        background-color: rgb(189,84,205);
+        -ms-grid-row: 6;
+        -ms-grid-column: 1;
+    }
+}
+
+
+@media (min-width:600px) and (max-width: 805px){
+    .widgetWindow{
+        width:410px;
+        height:615px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+        display: grid;
+        display: -ms-grid;
+        grid-template-columns: 205px 205px;
+        -ms-grid-columns: 205px 205px;
+        grid-template-rows: 205px 205px 205px;
+        -ms-grid-rows: 205px 205px 205px;
+        font-family: Verdana;
+        font-weight: bold;
+        margin: 95px;
+        color: white;
+    }
+
+    .aqua{
+        background-color: rgb(6,179,219);
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+
+    .green{
+        background-color: rgb(78,212,134);
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+    }
+
+    .blue{
+        background-color: rgb(97,57,246);
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+    }
+
+    .yellow{
+        background-color: rgb(227,182,61);
+        -ms-grid-row: 2;
+        -ms-grid-column: 2;
+    }
+
+    .red{
+        background-color: rgb(220,61,102);
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+
+    .purple{
+        background-color: rgb(189,84,205);
+        -ms-grid-row: 3;
+        -ms-grid-column: 2;
+    }
+
+    .widgetWindow__element{
+        height: 205px;
+        width: 205px;
+    }
+}
+
+@media (min-height: 600px){
+    html,body{
+        height:100%;
+    }
+}
+
+@media (min-width: 805px){
+    .backgroundContainer{
+        background: url('../images/forest.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height:100%;
+    }
+
+    .widgetWindow {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+        display: grid;
+        display: -ms-grid;
+        -ms-grid-column-align: center;
+        grid-template-columns: 205px 205px 205px;
+        -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-rows: 205px 205px;
+        -ms-grid-rows: 1fr 1fr;
+        justify-content: center;
+        align-content: center;
+        font-family: Verdana;
+        font-weight: bold;
+        color: white;
+        margin:95px;
+    }
+
+    .aqua{
+        background-color: rgb(6,179,219);
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+
+    .green{
+        background-color: rgb(78,212,134);
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+    }
+
+    .blue{
+        background-color: rgb(97,57,246);
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+    }
+
+    .yellow{
+        background-color: rgb(227,182,61);
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+    }
+
+    .red{
+        background-color: rgb(220,61,102);
+        -ms-grid-row: 2;
+        -ms-grid-column: 2;
+    }
+
+    .purple{
+        background-color: rgb(189,84,205);
+        -ms-grid-row: 2;
+        -ms-grid-column: 3;
+    }
+}
+
+.square{
+    max-height: 205px;
+    max-width: 205px;
+}
+
+/*Colors of widgetWindow__elements*/
+
+.weatherPicture{
+    width:90px;
+    height: 77px;
+    padding-top: 45px;
+    padding-bottom: 26px;
+    padding-right: 57.5px;
+    padding-left:57.5px;
+}
+
+.cityName{
+    width: 205px;
+    height: 12px;
+    display: flex;
+    justify-content: center;
+    margin:0;
+    padding-bottom: 45px;
+}
+
+.weeklyImageContainer{
+    height:105px;
+    width:205px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weeklyForecast{
+    background-color: #b23254;
+    width: 205px;
+    height:100px;
+    font-size: 12px;
+    padding: 14px;
+}
+
+.tableImageContainer{
+    text-align:center;
+    padding-top:5px;
+}
+
+.tableDegreesText{
+    text-align:center;
+}

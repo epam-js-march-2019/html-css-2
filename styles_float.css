@@ -1,0 +1,146 @@
+html,body{
+    margin:0;
+}
+
+/*Mobile version*/
+.backgroundContainer{
+    background: url("../images/forest.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height:100%;
+    min-width: 395px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.widgetWindow{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+    width: 205px;
+    height: 1230px;
+    font-family: Verdana;
+    font-weight: bold;
+    color: white;
+    margin:95px;
+}
+
+/*Tablet version*/
+@media (min-width:615px) and (max-width: 805px){
+    .widgetWindow{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+        min-width: 410px;
+        min-height: 615px;
+        width:410px;
+        height:615px;
+        padding:0;
+        font-family: Verdana;
+        font-weight: bold;
+        color: white;
+    }
+}
+
+/*Desktop version*/
+@media (min-width: 805px){
+    .widgetWindow {
+        display:inline-block;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+        min-width: 615px;
+        min-height: 410px;
+        height: 410px;
+        width:615px;
+        font-family: Verdana;
+        font-weight: bold;
+        color: white;
+        padding:0;
+    }
+}
+
+@media (min-width: 805px) and (min-height:600px){
+    html,body{
+        height:100%;
+    }
+
+    .widgetWindow {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+        min-width: 615px;
+        min-height: 410px;
+        display:inline-block;
+        font-family: Verdana;
+        font-weight: bold;
+        color: white;
+    }
+}
+
+.square{
+    float:left;
+    max-height: 205px;
+    max-width: 205px;
+}
+
+.aqua{
+    background-color: rgb(6,179,219);
+}
+
+.green{
+    background-color: rgb(78,212,134);
+}
+
+.blue{
+    background-color: rgb(97,57,246);
+}
+
+.yellow{
+    background-color: rgb(227,182,61);
+}
+
+.red{
+    background-color: rgb(220,61,102);
+}
+
+.purple{
+    background-color: rgb(189,84,205);
+}
+
+.weatherPicture{
+    width:90px;
+    height: 77px;
+    padding-top: 45px;
+    padding-bottom: 26px;
+    padding-right: 57.5px;
+    padding-left:57.5px;
+}
+
+.cityName{
+    width: 205px;
+    height: 12px;
+    text-align:center;
+    margin:0;
+    padding-bottom: 45px;
+}
+
+.weeklyImageContainer{
+    height:105px;
+    width:205px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weeklyForecast{
+    background-color: #b23254;
+    width: 205px;
+    height:100px;
+    font-size: 12px;
+    padding: 14px;
+}
+
+.tableImageContainer{
+    text-align:center;
+    padding-top:5px;
+}
+
+.tableDegreesText{
+    text-align:center;
+}
