@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.weather-widget{
+    background: url(Background.jpg) no-repeat center center;
+    padding: 82px 40px;
+    background-size: cover;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-widget__right-section {
+    background-image: linear-gradient(145deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 8%, rgba(255,255,255,0.5) 35%, rgba(255,255,255,0) 10%), url(Tower.jpg);
+    border-radius: 5px 5px 0px 0px;
+    border-right: 1px solid black;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 292px;
+    min-width: 292px;
+    height: 428px;
+}
+
+.weather-widget__icon{
+    margin: auto;
+}
+
+.weather-widget__block_top{
+    /* Оформление текста */
+    color:white;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 200;
+    font-size:36px;
+
+    /* Фон */
+    background-color:rgba(46,28,37,.89);
+    padding: 30px 0px;
+    text-align: center;
+    width: 100%;
+
+}
+
+.weather-widget__block_bottom{
+    /* Оформление текста */
+    color:white;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 300;
+    font-size:22px;
+
+    /* Фон */
+    background-color:rgba(119,25,33,.89);
+    padding: 30px 0px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Инфографика на правой части */
+.weather-widget__left-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 0px 0px 5px 5px;
+    max-width:292px;
+    min-width: 292px;
+    height: 428px;
+}
+
+.weather-widget__text {
+    padding: 10px 0px 5px 0px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 200;
+    font-size: 101px;
+    color: #771921;
+    border-bottom: 0.5px solid #771921;
+}
+.weather-widget__img{
+    border-bottom: 0.5px solid #771921;
+    padding: 15px 0px 15px 0px;
+    margin: 0 auto;
+}
+
+.weather-widget__table{
+    width: 85%;
+    padding: 15px 5px;
+    text-align: center;
+    box-sizing: border-box;
+    border-spacing: 20px 0px;
+}
+
+td{
+    padding: 5px 0px;
+}
+
+.weather-widget__table-row {
+    color: #771921;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+.weather-widget__table-row_color_red {
+    color: #771921;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+.weather-widget__table-row_color_black{
+    color: black;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+.weather-widget__table-row_color_red td{
+    padding: 10px 0px 0px 0px;
+}
+.weather-widget__table-row td{
+    border-bottom: 0.5px solid #771921;
+
+}
+
+@media only screen and (min-width: 600px) {
+    .weather-widget{
+        max-width: 100%;
+        padding: 82px 109px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    }
+    .weather-widget__right-section{
+        border-radius: 5px 0px 0px 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    .weather-widget__left-section{
+        border-radius: 0px 5px 5px 0px;
+    }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .weather-widget__icon{
+        margin: 0 auto;
+        padding-bottom: 50px ;
+    }
+}
