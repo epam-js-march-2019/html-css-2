@@ -110,7 +110,12 @@
 		width: 100%;
 	}
 
+	.weather-info {
+		background-color: rgba(0,0,0,0.1);
+	}
 
-
+	.forecast__day {
+		font-size: 70%;
+	}
 
 }
