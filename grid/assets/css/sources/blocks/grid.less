@@ -1,0 +1,12 @@
+.grid{
+    display: grid;
+    grid-template-columns: 20.5rem 20.5rem 20.5rem;
+    .media(620px, {
+        grid-template-columns: 31rem 31rem;
+      });
+      .media(375px, {
+        grid-template-columns: 37.5rem;
+        justify-content: center;
+        background: white;
+      });
+}

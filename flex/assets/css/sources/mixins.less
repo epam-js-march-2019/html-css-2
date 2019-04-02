@@ -1,0 +1,34 @@
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.justify (@align) {
+  justify-content: @align;
+}
+
+.wrap(@type) {
+  flex-wrap: @type;
+}
+
+// inline-block
+.ib (@align) {
+  display: inline-block;
+  vertical-align: @align;
+}
+a{
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+.media(@width, @rules) {
+  @media screen and (max-width: @width) {
+    @rules();
+  }
+}
