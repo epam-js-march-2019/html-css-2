@@ -87,7 +87,7 @@
 	align-items: center;
 	border-right: 1px solid white;
 	font-family: 'Lato';
-	width: 18%;
+	min-width: 18%;
 	align-items: center;
 }
 
@@ -100,7 +100,30 @@
 	align-items: center;
 }
 
-@media screen and (max-width: 400px) {
+
+@media screen and (max-width:300px) {
+	body {
+		width: 100%;
+		margin: 0;
+	}
+
+	.weather-info {
+		font-size: 80%;
+	}
+
+	.forecast img {
+		width: 80%;
+	}
+
+}
+
+@media screen and (max-width: 400px){
+	.forecast img {
+		width: 50%
+	}
+}
+
+@media screen and (max-width: 600px) {
 	body {
 		width: 100%;
 		margin: 0;
@@ -118,4 +141,11 @@
 		font-size: 70%;
 	}
 
+}
+
+@media screen and (orientation: landscape) and (max-width: 700px){
+.widget {
+	max-width: 100%;
+	height: 90%;
+}
 }
