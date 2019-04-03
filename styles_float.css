@@ -75,8 +75,14 @@ html,body{
 
 .square{
     float:left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     max-height: 205px;
     max-width: 205px;
+    min-height:205px;
+    min-width:205px;
 }
 
 .aqua{
@@ -121,24 +127,35 @@ html,body{
 }
 
 .weeklyImageContainer{
+    min-height:105px;
+    min-width:205px;
     height:105px;
-    width:205px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.weeklyForecast{
+.tableContainer{
     background-color: #b23254;
     width: 205px;
-    height:100px;
+    max-width:205px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height:100px;
+    max-height:100px;
     font-size: 12px;
+}
+
+.weeklyForecast{
     padding: 14px;
+    max-width: 205px;
+    max-height: 100px;
 }
 
 .tableImageContainer{
     text-align:center;
-    padding-top:5px;
+    padding: 7px;
 }
 
 .tableDegreesText{
