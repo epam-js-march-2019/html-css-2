@@ -18,12 +18,55 @@ html,body{
 
 .widgetWindow{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
-    width: 205px;
+    width: 310px;
     height: 1230px;
     font-family: Verdana;
     font-weight: bold;
     color: white;
     margin:95px;
+}
+
+.square{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 205px;
+    max-width: 310px;
+    min-height:205px;
+    min-width:310px;
+}
+
+.weeklyImageContainer{
+    min-height:105px;
+    min-width:310px;
+    height:105px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tableContainer{
+    background-color:#b23254;
+    width:310px;
+    max-width:310px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:100px;
+    max-height:100px;
+    font-size:12px;
+}
+
+.weeklyForecast{
+    padding:10px;
+    max-width:310px;
+    max-height:100px;
+}
+
+.tableImageContainer{
+    text-align:center;
+    padding: 10px;
 }
 
 /*Tablet version*/
@@ -38,6 +81,50 @@ html,body{
         font-family: Verdana;
         font-weight: bold;
         color: white;
+    }
+
+    .square{
+        float:left;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-height: 205px;
+        max-width: 205px;
+        min-height:205px;
+        min-width:205px;
+    }
+
+    .weeklyImageContainer{
+        min-height:105px;
+        min-width:205px;
+        height:105px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tableContainer{
+        background-color:#b23254;
+        width:205px;
+        max-width:205px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        min-height:100px;
+        max-height:100px;
+        font-size:12px;
+    }
+
+    .weeklyForecast{
+        padding:10px;
+        max-width:205px;
+        max-height:100px;
+    }
+
+    .tableImageContainer{
+        text-align:center;
+        padding: 10px;
     }
 }
 
@@ -55,6 +142,50 @@ html,body{
         color: white;
         padding:0;
     }
+
+    .square{
+        float: left;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-height: 205px;
+        max-width: 205px;
+        min-height:205px;
+        min-width:205px;
+    }
+
+    .weeklyImageContainer{
+        min-height:105px;
+        min-width:205px;
+        height:105px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tableContainer{
+        background-color:#b23254;
+        width:205px;
+        max-width:205px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        min-height:100px;
+        max-height:100px;
+        font-size:12px;
+    }
+
+    .weeklyForecast{
+        padding:10px;
+        max-width:205px;
+        max-height:100px;
+    }
+
+    .tableImageContainer{
+        text-align:center;
+        padding: 10px;
+    }
 }
 
 @media (min-width: 805px) and (min-height:600px){
@@ -71,18 +202,50 @@ html,body{
         font-weight: bold;
         color: white;
     }
-}
 
-.square{
-    float:left;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-height: 205px;
-    max-width: 205px;
-    min-height:205px;
-    min-width:205px;
+    .square{
+        float:left;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-height: 205px;
+        max-width: 205px;
+        min-height:205px;
+        min-width:205px;
+    }
+
+    .weeklyImageContainer{
+        min-height:105px;
+        min-width:205px;
+        height:105px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tableContainer{
+        background-color:#b23254;
+        width:205px;
+        max-width:205px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        min-height:100px;
+        max-height:100px;
+        font-size:12px;
+    }
+
+    .weeklyForecast{
+        padding:10px;
+        max-width:205px;
+        max-height:100px;
+    }
+
+    .tableImageContainer{
+        text-align:center;
+        padding: 10px;
+    }
 }
 
 .aqua{
@@ -124,38 +287,6 @@ html,body{
     text-align:center;
     margin:0;
     padding-bottom: 45px;
-}
-
-.weeklyImageContainer{
-    min-height:105px;
-    min-width:205px;
-    height:105px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.tableContainer{
-    background-color: #b23254;
-    width: 205px;
-    max-width:205px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height:100px;
-    max-height:100px;
-    font-size: 12px;
-}
-
-.weeklyForecast{
-    padding: 14px;
-    max-width: 205px;
-    max-height: 100px;
-}
-
-.tableImageContainer{
-    text-align:center;
-    padding: 7px;
 }
 
 .tableDegreesText{
