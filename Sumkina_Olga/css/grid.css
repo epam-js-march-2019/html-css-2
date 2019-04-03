@@ -81,16 +81,22 @@
 	margin: 0 auto 0 auto;
 	justify-content: center;
 	padding-top: 10px;
+	display: grid;
+	grid-template-columns: 10% 20% 20% 20% 20% 10%;
 }
 
 .forecast__day {
 	display: grid;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 	border-right: 1px solid white;
 	font-family: 'Lato';
 	min-width: 18%;
 	align-items: center;
+}
+
+.forecast__day span, img {
+	margin: 0 auto;
 }
 
 .forecast section:nth-child(6) {
