@@ -13,15 +13,8 @@ body{
 
 
 .shadow-container{
-    box-shadow: 0px 0px 50px 15px rgb(0, 0, 0);
-    display: grid;
-    display: -ms-grid;
-    -ms-grid-columns: 33.333% 33.333% 33.333%;
-    -ms-grid-rows: auto auto;
-    grid-template-columns: 33.333% 33.333% 33.333%;
-    grid-template-rows: auto auto;
-    max-width: 615px;
-    max-height: 410px;
+    width: 615px;
+    height: 410px;
     position: absolute;
     top: 0;
     right: 0;
@@ -29,6 +22,52 @@ body{
     left: 0;
     margin: auto;
     background-size: contain;
+    -webkit-box-shadow: 0px 0px 50px 15px rgb(0, 0, 0);
+    box-shadow: 0px 0px 50px 15px rgb(0, 0, 0);
+    display: grid;
+    display: -ms-grid;
+    -ms-grid-columns: 33.333% 33.333% 33.333%;
+    -ms-grid-rows: auto auto;
+    -ms-grid-columns: 33.333% 33.333% 33.333%;
+    grid-template-columns: 33.333% 33.333% 33.333%;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+}
+
+
+.shadow-container > *:nth-child(1){
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+}
+
+
+.shadow-container > *:nth-child(2){
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+}
+
+
+.shadow-container > *:nth-child(3){
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+}
+
+
+.shadow-container > *:nth-child(4){
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+}
+
+
+.shadow-container > *:nth-child(5){
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+}
+
+
+.shadow-container > *:nth-child(6){
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
 }
 
 
@@ -91,15 +130,65 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 
+    display: -ms-grid;
+
     display: grid;
 
     font-size: 12px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+
+    -ms-grid-columns: 25% 25% 25% 25%;
 
     grid-template-columns: 25% 25% 25% 25%;
 
+    -ms-grid-rows: auto auto;
+
     grid-template-rows: auto auto;
+}
+
+.week_weather-info > *:nth-child(1){
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+}
+
+.week_weather-info > *:nth-child(2){
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+}
+
+.week_weather-info > *:nth-child(3){
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+}
+
+.week_weather-info > *:nth-child(4){
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+}
+
+.week_weather-info > *:nth-child(5){
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+}
+
+.week_weather-info > *:nth-child(6){
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+}
+
+.week_weather-info > *:nth-child(7){
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+}
+
+.week_weather-info > *:nth-child(8){
+    -ms-grid-row: 2;
+    -ms-grid-column: 4;
 }
 
 .week_block-img, .week_weather-info{
@@ -125,19 +214,73 @@ body{
     .shadow-container{
         height: auto;
         max-height: unset;
+        width: -webkit-min-content;
+        width: -moz-min-content;
         width: min-content;
         margin-bottom: 100px;
         margin-top: 100px;
         position: relative;
+        -ms-grid-columns: 50% 50%;
         grid-template-columns: 50% 50%;
+        -ms-grid-rows: auto auto auto;
         grid-template-rows: auto auto auto;
+    }
+    .shadow-container > *:nth-child(1){
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+    .shadow-container > *:nth-child(2){
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+    }
+    .shadow-container > *:nth-child(3){
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+    }
+    .shadow-container > *:nth-child(4){
+        -ms-grid-row: 2;
+        -ms-grid-column: 2;
+    }
+    .shadow-container > *:nth-child(5){
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+    .shadow-container > *:nth-child(6){
+        -ms-grid-row: 3;
+        -ms-grid-column: 2;
     }
 }
 
 
 @media all and (max-width: 500px){
     .shadow-container{
+        -ms-grid-columns: 100%;
         grid-template-columns: 100%;
+        -ms-grid-rows: auto auto auto auto auto auto;
         grid-template-rows: auto auto auto auto auto auto;
+    }
+    .shadow-container > *:nth-child(1){
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+    .shadow-container > *:nth-child(2){
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+    }
+    .shadow-container > *:nth-child(3){
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+    .shadow-container > *:nth-child(4){
+        -ms-grid-row: 4;
+        -ms-grid-column: 1;
+    }
+    .shadow-container > *:nth-child(5){
+        -ms-grid-row: 5;
+        -ms-grid-column: 1;
+    }
+    .shadow-container > *:nth-child(6){
+        -ms-grid-row: 6;
+        -ms-grid-column: 1;
     }
 }
