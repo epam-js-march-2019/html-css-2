@@ -3,7 +3,7 @@ html,body{
 }
 
 .backgroundContainer{
-    background: url('../images/forest.png');
+    background: url('images/forest.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
