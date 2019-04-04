@@ -1,0 +1,150 @@
+body {
+	margin: 0;
+    padding: 0;
+}
+.contentDiv{
+	background-image: url(img/background.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	max-width: 100%;
+    padding: 82px 109px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+	width: 579px;
+	height: 430px;
+	background-repeat: no-repeat;
+	background-position: center;
+    box-shadow: 0 0 10px black;
+    border-radius: 5px 5px 5px 5px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.content_part {
+	height: 430px;
+	width: 289px;
+}
+
+.firstpart {
+	background: url(img/city.png);
+	background-repeat: no-repeat;
+	border-right: 1px solid #771921;
+	border-radius: 5px 0px 0px 5px; 
+	font-family: 'Dosis', sans-serif;
+    font-weight: 200;
+    display: flex;
+    flex-direction: column;
+}
+
+.secondpart {
+	background-color: white;
+	font-family: 'Dosis', sans-serif;
+	border-radius: 0px 5px 5px 0px; 
+	display: flex;
+    flex-direction: column;
+}
+.firstpart__ul {
+	padding-left: 0px;
+	list-style-type: none;
+	text-align: center;
+	font-family: 'Dosis';
+}
+
+.firstpart__ul__image {
+	height: 234px;
+}
+
+.firstpart__ul__li_day {
+	background-color: #2e1c25;
+	opacity: .8;
+	height: 90px;
+}
+
+.firstpart__ul__li_day_text {
+	color: white;
+	 font-size:36px;
+	 font-weight: 200;
+	line-height: 86px;
+}
+
+.firstpart__ul__li_citydate_text {
+	color: white;
+	font-weight: 300;
+	line-height: 86px;
+}
+
+.firstpart__ul__li_day__img {
+	margin-top: 40px;
+}
+
+.firstpart__ul__li_citydate {
+	background-color: #771921;
+	opacity: .8;
+	height: 90px;
+}
+
+.secondpart__table{
+    text-align: center;
+    margin-top: 25px;
+}
+.secondpart_item{
+	margin-left: 40px;
+    margin-right: 40px;
+}
+.secondpart__table_numberDay 	{
+	color:#852d2d
+}
+.secondpart__table_day td{
+	color:#852d2d;
+	padding-top: 0px;
+	border-bottom: 0.5px solid #771921;
+}
+.secondpart__img{
+	border-bottom: 0.5px solid #771921;
+	padding-top: 25px;
+	padding-bottom: 20px;
+}
+.secondpart__temprete{
+	border-bottom: 0.5px solid #771921;
+	font-size: 98px;
+	font-weight: 200;
+	text-align: center;
+	padding-top: 20px;
+    padding-bottom: 10px;
+    color:#852d2d;
+    width: 205px;
+}
+.secondpart__article{
+	    float: left;
+}
+.secondpart__section{
+	margin-left: 40px;
+    margin-right: 40px;
+    width: 210px;
+    height: 150px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 650px) {
+    .content{
+    	height: 860px;
+    	width: 289px;
+    	display: flex;
+    	flex-direction: column;
+    }
+    .firstpart{
+    	border-radius: 5px 5px 0px 0px;
+    }
+    .secondpart{
+    	border-radius: 0px 0px 5px 5px;
+    }
+}
