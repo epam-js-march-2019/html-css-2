@@ -1,0 +1,98 @@
+/* wrapper */
+.widget {
+	background: url(../img/paris/Paris.png) no-repeat;
+	height: 435px;
+	width: 695px;
+	margin: 0 auto;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* weather info */
+
+.weather-info {
+	color: white;
+	font-family: 'Lato';
+	font-weight: 300;
+}
+
+.weather-info:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.weather-info__weather {
+	float: right;
+}
+
+.widget__weather-info {
+	padding: 40px 40px 0 0;
+}
+
+/* current date */
+
+.weather-info__date {
+	padding: 0 5% 12% 0;
+	float: right;
+}
+
+.date__about-weather {
+	margin: 0;
+}
+
+.date__day-of-week {
+	font-size: 180%;
+}
+
+.date__current-date {
+	font-size: 100%;
+}
+
+.weather__grad {
+	font-size: 550%;
+	font-weight: 700;
+}
+
+.weather__location {
+	font-size: 150%;
+}
+
+.weather__wind span {
+	font-weight: 700;
+	font-size: 30px;
+}
+
+.wind__wind-icon {
+	margin-right: 10px;
+}
+
+/* forecast */
+
+.forecast {
+	color: white;
+	width: 100%;
+	background-color: rgba(0,0,0, 0.2);
+}
+
+.widget__forecast {
+
+	margin: 130px auto 0 auto;
+	padding-top: 10px;
+}
+
+.forecast__day {
+	border-right: 1px solid white;
+	font-family: 'Lato';
+	width: 18%;
+
+}
+
+.forecast section:nth-child(6) {
+	border: 0;
+}
+
+.forecast__slider {
+	
+}
