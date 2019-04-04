@@ -1,0 +1,254 @@
+@font-face {
+    font-family: AvenirNext;
+    src: url(../font/AvenirNext-Bold.ttf);
+}
+
+
+body{
+    /*background*/
+    background: url("../img/main-bg.jpg") center no-repeat;
+    background-size: cover;
+
+    /*font*/
+    color: white;
+    font-family: AvenirNext;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.main{
+        /*props*/
+    min-width: 205px;
+    max-width: 615px;
+    height: auto;
+    margin: 100px auto;
+
+        /*display: ;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-widget{
+
+    width: 615px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    box-shadow:  0 5px 10px 0 rgba(0, 0, 0, 0.5), 0 8px 20px 0 rgba(0, 0, 0, 0.8);
+
+    /*for IE11*/
+    display: -ms-grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+}
+
+.main-block{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 3fr 2fr;
+    width: 205px;
+    height: 205px;
+    box-sizing: border-box;
+    font-size: 16px;
+    overflow: hidden;
+    vertical-align: center;
+    /*for IE11*/
+}
+
+#days{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.city-temperature{
+
+    margin: auto 0;
+    text-align: center;
+    font-size: 16px;
+}
+
+.image-weather{
+
+    width: 90px;
+    height: 88px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.days-table{
+    font-size: 12px;
+    height: 50%;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #b83457;
+    margin-bottom: 0;
+    margin-top: auto;
+}
+
+
+
+.chicago {
+    background-color: #06b3db;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+}
+
+.seattle{
+    background-color: #4ed486;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+}
+
+.brooklyn{
+    background-color: #6139f6;
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+}
+
+.portland{
+    background-color: #e3b63d;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+}
+
+.days{
+    background-color: #dc3d66;
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+
+}
+
+.san-jose{
+    background-color: #bd54cd;
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+}
+
+.days .image-weather{
+    margin: 20px auto;
+    width: 63px;
+    height: 63px;
+}
+
+
+
+
+
+
+@media only screen
+    and (max-width: 767px){
+    .weather-widget{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        width: 205px;
+        min-height: auto;
+        /*for IE11*/
+        display: -ms-grid;
+        -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+        -ms-grid-rows: 1fr;
+    }
+
+
+    .chicago {
+        background-color: #06b3db;
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+
+    .seattle{
+        background-color: #4ed486;
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+    }
+
+    .brooklyn{
+        background-color: #6139f6;
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+
+    .portland{
+        background-color: #e3b63d;
+        -ms-grid-row: 4;
+        -ms-grid-column: 1;
+    }
+
+    .days{
+        background-color: #dc3d66;
+        -ms-grid-row: 5;
+        -ms-grid-column: 1;
+
+    }
+
+    .san-jose{
+        background-color: #bd54cd;
+        -ms-grid-row: 6;
+        -ms-grid-column: 1;
+    }
+}
+
+@media only screen
+and (min-width: 768px)
+and (max-width: 1024px){
+
+    .weather-widget {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        width: 205px;
+        min-height: auto;
+        /*for IE11*/
+        display: -ms-grid;
+        -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+        -ms-grid-rows: 1fr;
+    }
+
+    .chicago {
+        background-color: #06b3db;
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+
+    .seattle{
+        background-color: #4ed486;
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+    }
+
+    .brooklyn{
+        background-color: #6139f6;
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+
+    .portland{
+        background-color: #e3b63d;
+        -ms-grid-row: 4;
+        -ms-grid-column: 1;
+    }
+
+    .days{
+        background-color: #dc3d66;
+        -ms-grid-row: 5;
+        -ms-grid-column: 1;
+
+    }
+
+    .san-jose{
+        background-color: #bd54cd;
+        -ms-grid-row: 6;
+        -ms-grid-column: 1;
+    }
+}
+
