@@ -76,6 +76,14 @@
 	background-color: rgba(0,0,0, 0.2);
 }
 
+.forecast:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
 .widget__forecast {
 
 	margin: 130px auto 0 auto;
@@ -86,7 +94,7 @@
 	border-right: 1px solid white;
 	font-family: 'Lato';
 	width: 18%;
-
+	float: left;
 }
 
 .forecast section:nth-child(6) {
@@ -94,5 +102,5 @@
 }
 
 .forecast__slider {
-	
+	float: left;
 }
