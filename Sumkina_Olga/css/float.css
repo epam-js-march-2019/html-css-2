@@ -16,11 +16,11 @@
 }
 
 .weather-info:after {
-    content: ".";
-    clear: both;
-    display: block;
-    height: 0;
-    visibility: hidden;
+	content: ".";
+	clear: both;
+	display: block;
+	height: 0;
+	visibility: hidden;
 }
 
 .weather-info__weather {
@@ -77,30 +77,52 @@
 }
 
 .forecast:after {
-    content: ".";
-    clear: both;
-    display: block;
-    height: 0;
-    visibility: hidden;
+	content: ".";
+	clear: both;
+	display: block;
+	height: 0;
+	visibility: hidden;
 }
 
 .widget__forecast {
-
-	margin: 130px auto 0 auto;
 	padding-top: 10px;
+	text-align: center;
+	box-sizing: border-box;
+	margin: 100px auto 0 auto;
+	padding: 30px 10% 0 10%;
 }
 
 .forecast__day {
 	border-right: 1px solid white;
 	font-family: 'Lato';
-	width: 18%;
+	width: 20%;
 	float: left;
+	display: block;
+	margin-left: 15px;
+}
+
+.forecast__day span {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.forecast__img {
+	display: block;
+	margin: 0 auto;
 }
 
 .forecast section:nth-child(6) {
 	border: 0;
+	margin-right: 10px;
+}
+
+.forecast section:nth-child(6) img {
+	margin: 5px;
 }
 
 .forecast__slider {
 	float: left;
+	position: relative;
+	top: 30px;
 }
