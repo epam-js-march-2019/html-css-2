@@ -1,0 +1,22 @@
+.layout-types {
+  width: 500px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.layout-types__list {
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.layout-types__list li {
+  width: 30%;
+  font-size: 22px;
+  border: 1px solid #0d1542;
+}
+
+.layout-types__link {
+  text-decoration: none;
+}
