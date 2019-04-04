@@ -98,10 +98,9 @@
 .forecast__day {
 	border-right: 1px solid white;
 	font-family: 'Lato';
-	width: 20%;
+	width: 23%;
 	float: left;
 	display: block;
-	margin-left: 15px;
 }
 
 .forecast__day span {
