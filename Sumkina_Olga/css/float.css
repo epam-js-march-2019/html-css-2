@@ -128,3 +128,47 @@
 	position: relative;
 	top: 30px;
 }
+
+@media screen and (max-width: 330px){
+
+	body {
+		margin: 0;
+	}
+
+	.widget {
+		width: 100%;
+	}
+
+	.weather-info {
+		background: rgba(0,0,0,0.1);
+	}
+
+	.weather-info__date {
+		left: 20% !important;
+	}
+
+	.weather-info__weather {
+		left: 13% !important;
+	}
+}
+
+@media screen and (max-width: 600px){
+	body {
+		margin: 0;
+	}
+	.widget {
+		width: 100%;
+	}
+
+	.weather-info {
+		background: rgba(0,0,0,0.1);
+	}
+
+	.weather-info__date {
+		left: 25%;
+	}
+
+	.weather-info__weather {
+		left: 25%;
+	}
+}
