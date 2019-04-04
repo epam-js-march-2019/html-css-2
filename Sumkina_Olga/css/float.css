@@ -171,4 +171,20 @@
 	.weather-info__weather {
 		left: 25%;
 	}
+
+	.widget__forecast {
+		padding: 30px 0 0 0;
+	}
+
+	.forecast__day {
+		width: 22%
+	}
+
+	.forecast__day span {
+		font-size: 80%;
+	}
+
+	.forecast section:nth-child(6) {
+		margin-right: 15px;
+	}
 }
