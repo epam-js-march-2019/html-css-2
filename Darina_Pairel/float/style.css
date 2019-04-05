@@ -1,0 +1,197 @@
+@font-face {
+    font-family: "AvenirNext-Bold";
+    src:url("../font/AvenirNext-Bold.ttf");
+}
+body{
+   font-size: 100%;
+}
+.content__city{
+    font-size: 1em;
+    padding-top:28px;
+    line-height: 0.72;
+}
+.content__city, .week_day__day, .week_day__weather, .week_day__degree{
+    font-family: "AvenirNext-Bold";
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+.week_day__day, .week_day__weather, .week_day__degree{
+    font-size: 0.75em;
+    padding: 5px 0;
+    line-height: 0.96;
+}
+.cube__content{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%,-50%);
+}
+.cubes__cube_classic{
+    display: inline-block;
+    position: relative;
+    width: 205px;
+    height: 205px;
+    text-align: center;
+    margin: -2px;
+
+}
+.cubes{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 615px;
+}
+.container{
+    height: auto;
+    width: 100%;
+
+}
+.cube__windy{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 205px;
+    height: 105px;
+    margin: -73.5px 0 0 -102.5px;
+}
+.cube__week{
+    position: absolute;
+    top: 2px;
+    height:100px;
+    width: 205px;
+    color:#fff;
+
+}
+.cube__week_day{
+    display:inline-block;
+    padding: 15px 8px;
+    height: 65px;
+}
+.cube-blue{
+    background-color: #06b3db;
+}
+.cube-green{
+    background-color: #4ed486;
+}
+.cube-dark-blue{
+    background-color: #6139f6;
+}
+.cube-yellow{
+    background-color: #6139f6;
+}
+.cube-pink{
+    background-color: #dc3d66;
+}
+.cube-purple{
+    background-color: #bd54cd;
+}
+.cube-dark-pink{
+
+    background-color: #b33254;
+}
+@media (max-width: 768px){
+    .cubes__cube_classic{
+        width: 102.5px;
+        height: 102.5px;
+    }
+    .cubes{
+        width: 315px;
+        height: auto;
+    }
+    .cube__week{
+        height:49px;
+        width: 102.5px;
+    }
+    .cube__windy {
+        height: 52.5px;
+        width: 102px;
+        margin: -35px 0 0 -51px;
+    }
+    .week_day__day, .week_day__weather, .week_day__degree {
+        font-size: 0.375em;
+        vertical-align: middle;
+        line-height: 0.48;
+    }
+    .week_day__degree{
+        padding:0;
+        vertical-align: super;
+    }
+    .week_day__day, .week_day__weather{
+        padding: 2.5px 0;
+    }
+    .week_day__weather>img{
+        width: 13px;
+        height: auto;
+    }
+    .cube__windy>img{
+        height: 35px;
+        width: auto;
+    }
+    .content__icon{
+        width: 46px;
+    }
+    .cube__week_day{
+        vertical-align: bottom;
+        padding: 7px 4px;
+        height: 32.5px;
+    }
+    .content__city {
+        font-size: 0.5em;
+        padding-top: 14px;
+        line-height: 0.36;
+    }
+
+}
+
+@media (max-width: 420px){
+    .cubes__cube_classic{
+        width: 60.3px;
+        height: 60.3px;
+    }
+    .cubes{
+        width: 185.3px;
+        height: auto;
+    }
+    .cube__week{
+        height: 28px;
+        width: 100%;
+    }
+    .cube__windy {
+        height: 31px;
+        width: 60.3px;
+        margin: -16px 0 0 -30.15px;
+    }
+    .week_day__day, .week_day__weather, .week_day__degree {
+        font-size: 0.20em;
+        vertical-align: middle;
+        line-height: 0.48;
+        padding: 0 0 3px 0;
+    }
+    .week_day__degree{
+        vertical-align: top;
+    }
+    .week_day__weather>img{
+        width: 7.6px;
+        height: auto;
+    }
+    .cube__windy>img{
+        height: 20.5px;
+        width: auto;
+    }
+    .content__icon{
+        width: 27px;
+    }
+    .cube__week_day{
+        vertical-align: bottom;
+        padding: 7px 0 0 0;
+        height: 20px;
+    }
+    .content__city {
+        font-size: 0.31em;
+        padding-top: 8px;
+        line-height: 0.36;
+    }
+}
