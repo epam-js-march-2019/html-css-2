@@ -1,0 +1,222 @@
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    list-style: none;
+    background-image: url("bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+}
+
+.wrapper{
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    list-style: none;
+
+}
+
+/* Left column */
+
+.wrapper__list-left{
+    background-image: url("bg-div.png");
+    width: 290px;
+    height: 438px;
+    float: left;
+    background-clip: padding-box;
+    border-radius: 3px 0 0 3px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Right column */
+
+.wrapper__list-right{
+    width: 290px;
+    height: 438px;
+    float: left;
+    background: white;
+    padding: 0;
+    margin: 0;
+    border-radius: 0 3px 3px 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.wrapper__item__sun{
+    height: 240px;
+    width: inherit;
+    position: relative;
+
+}
+.wrapper__item__sun img{
+    position: relative;
+    top: 42px;
+    left: 76px;
+}
+
+.wrapper__item__weather-state{
+    background-color: rgba(46, 28, 37, .89);
+    font-family: 'Dosis-ExtraLight';
+    font-weight: 200;
+    font-size: 36px;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: inherit;
+    height: 94px;
+}
+
+.wrapper__item__tokyo-weather{
+    height: 104px;
+    width: inherit;
+    background-color: rgba(119, 25, 33, .89);
+    font-family: 'Dosis-Light';
+    font-weight: 300;
+    font-size: 16pt;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.wrapper__item__temperature{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 144px;
+    width: inherit;
+    margin: 0 auto;
+    font-family: 'Dosis-ExtraLight';
+    font-weight: 200;
+    font-size: 74pt;
+    color: #771921;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.wrapper__item__scale{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: inherit;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.wrapper__item__days-weather{
+    position: relative;
+    top: 17px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 206px;
+    height: 197px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-top: 1px solid #771921;
+}
+
+@font-face {
+    font-family: Dosis-ExtraLight;
+    src: url(fonts/Dosis-ExtraLight.otf);
+}
+@font-face {
+    font-family: Dosis-Light;
+    src: url(fonts/Dosis-ExtraLight.otf);
+}
+
+/* For mobile */
+@media screen and (max-width: 600px){
+    .wrapper{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        position: relative;
+        top: 127px;
+        min-height: 756px;
+        min-width: 290px;
+        width: 36.5%;
+
+    }
+    .wrapper__list-left{
+        margin-top: 75px;
+        border-radius: 3px 3px 0 0;
+
+    }
+
+    .wrapper__list-right{
+        margin-bottom: 50px;
+        border-radius: 0 0 3px 3px;
+
+    }
+}
