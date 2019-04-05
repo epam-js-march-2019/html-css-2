@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="142.8" height="142.8" viewBox="0 0 142.8 142.8">
+  <g id="sun_copy" data-name="sun copy" transform="translate(-185.6 -122.6)">
+    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(222.09 159.31)" fill="none" stroke="unset" stroke-width="9">
+      <circle cx="34.31" cy="34.31" r="34.31" stroke="none"/>
+      <circle cx="34.31" cy="34.31" r="29.81" fill="none"/>
+    </g>
+    <rect id="Rounded_Rectangle_1" data-name="Rounded Rectangle 1" width="24.99" height="10.71" rx="4.76" transform="translate(303.41 188.05)" fill="unset"/>
+    <rect id="Rounded_Rectangle_1_copy" data-name="Rounded Rectangle 1 copy" width="24.99" height="10.71" rx="4.76" transform="translate(185.6 188.05)" fill="unset"/>
+    <rect id="Rounded_Rectangle_1_copy_2" data-name="Rounded Rectangle 1 copy 2" width="10.71" height="24.99" rx="4.76" transform="translate(252.24 122.6)" fill="unset"/>
+    <rect id="Rounded_Rectangle_1_copy_2-2" data-name="Rounded Rectangle 1 copy 2" width="10.71" height="24.99" rx="4.76" transform="translate(252.24 240.41)" fill="unset"/>
+    <path id="Rounded_Rectangle_1_copy_4" data-name="Rounded Rectangle 1 copy 4" d="M205.243,142.49l.841-.841a4.76,4.76,0,0,1,6.732,0L225.2,154.031a4.76,4.76,0,0,1,0,6.732l-.841.841a4.76,4.76,0,0,1-6.732,0l-12.383-12.383A4.76,4.76,0,0,1,205.243,142.49Z" fill="unset"/>
+    <path id="Rounded_Rectangle_1_copy_4-2" data-name="Rounded Rectangle 1 copy 4" d="M289.991,227.238l.842-.841a4.76,4.76,0,0,1,6.732,0l12.383,12.383a4.76,4.76,0,0,1,0,6.732l-.841.841a4.76,4.76,0,0,1-6.732,0l-12.383-12.383A4.76,4.76,0,0,1,289.991,227.238Z" fill="unset"/>
+    <path id="Rounded_Rectangle_1_copy_3" data-name="Rounded Rectangle 1 copy 3" d="M311.005,139.748l.841.842a4.76,4.76,0,0,1,0,6.732L297.564,161.6a4.76,4.76,0,0,1-6.732,0l-.842-.841a4.76,4.76,0,0,1,0-6.732l14.283-14.283A4.76,4.76,0,0,1,311.005,139.748Z" fill="unset"/>
+    <path id="Rounded_Rectangle_1_copy_3-2" data-name="Rounded Rectangle 1 copy 3" d="M224.357,226.4l.841.841a4.76,4.76,0,0,1,0,6.732l-14.283,14.283a4.76,4.76,0,0,1-6.732,0l-.841-.842a4.76,4.76,0,0,1,0-6.732L217.626,226.4A4.76,4.76,0,0,1,224.357,226.4Z" fill="unset"/>
+  </g>
+</svg>

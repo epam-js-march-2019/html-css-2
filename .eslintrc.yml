@@ -1,0 +1,21 @@
+extends: ['htmlacademy/es6']
+
+env:
+  browser: true
+  es6: true
+  node: true
+  mocha: true
+
+rules:
+  indent: [2, 2]
+  camelcase: [2, { properties: 'never' }]
+  quotes: [2, 'single']
+  no-trailing-spaces: ["error", { "skipBlankLines": true }]
+  no-console: 0
+  new-cap: ["error", {"properties": false}]
+  object-curly-spacing: 0
+  spaced-comment: 0
+
+globals:
+  svg4everybody: true
+  jQuery: true
