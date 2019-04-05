@@ -1,0 +1,36 @@
+@import "vars";
+@import "mixins";
+@import "fonts";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: $text-accent;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../img/bg2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%, cover;
+  background-origin: content-box;
+  font-size: 15px;
+  font-family: LatoLight;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+// ======media queries============
+@import "media";

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Cubes</title>
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/main.min.css" />
+</head>
+
+<body>
+	<div class="wrapper">
+		<section class="widget">
+			<h1 class="visually-hidden">weather forecast</h1>
+
+			<article class="widget__item widget__item--chicago">
+				<h2>Chicago</h2>
+				<svg class="widget__icon">
+					<use xlink:href="#icon-chicago" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+				</svg>
+				<p>&frasl; 23&deg;</p>
+			</article>
+
+			<article class="widget__item widget__item--seattle">
+				<h2>Seattle</h2>
+				<svg class="widget__icon widget__icon--seattle">
+					<use xlink:href="#icon-seattle" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+				</svg>
+				<p>&frasl; 34&deg;</p>
+			</article>
+
+			<article class="widget__item widget__item--brooklyn">
+				<h2>Brooklyn</h2>
+				<svg class="widget__icon widget__icon--brooklyn">
+					<use xlink:href="#icon-brooklyn" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+				</svg>
+				<p>&frasl; 55&deg;</p>
+			</article>
+
+			<article class="widget__item widget__item--portland">
+				<h2>Portland</h2>
+				<svg class="widget__icon widget__icon--portland">
+					<use xlink:href="#icon-portland" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+				</svg>
+				<p>&frasl; 27&deg;</p>
+			</article>
+
+			<article class="widget__item widget__item--hometown">
+				<div class="widget-item-wrapper">
+					<h2 class="visually-hidden">Hometown forecast</h2>
+					<svg class="widget__icon widget__icon--hometown">
+						<use xlink:href="#icon-hometown" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+					</svg>
+				</div>
+				<ul class="widget__hometown-list">
+					<li class="widget__hometown-item">
+						<p class="widget__day">Mon</p>
+						<svg class="widget__icon widget__icon--hometown-small">
+							<use xlink:href="#icon-chicago" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+						</svg>
+						<p>22&deg;</p>
+					</li>
+					<li class="widget__hometown-item">
+						<p class="widget__day">Tue</p>
+						<svg class="widget__icon widget__icon--hometown-small">
+							<use xlink:href="#icon-chicago" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+						</svg>
+						<p>19&deg;</p>
+					</li>
+					<li class="widget__hometown-item">
+						<p class="widget__day">Wen</p>
+						<svg class="widget__icon widget__icon--hometown-small">
+							<use xlink:href="#icon-san-jose" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+						</svg>
+						<p>18&deg;</p>
+					</li>
+					<li class="widget__hometown-item">
+						<p class="widget__day">Thu</p>
+						<svg class="widget__icon widget__icon--hometown-small">
+							<use xlink:href="#icon-brooklyn" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+						</svg>
+						<p>14&deg;</p>
+					</li>
+				</ul>
+			</article>
+
+			<article class="widget__item widget__item--san-jose">
+				<h2>San Jose</h2>
+				<svg class="widget__icon widget__icon--san-jose">
+					<use xlink:href="#icon-san-jose" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+				</svg>
+				<p>&frasl; 47&deg;</p>
+			</article>
+
+		</section>
+	</div>
+
+<!-- SVG sprite -->
+	<svg style="position: absolute; z-index: -1; visibility: hidden;">
+		<symbol id="icon-chicago" viewBox="0 0 89.906 75.593">
+			<path class="dash-animation"
+				d="M65.393 65.381H63.35a18.384 18.384 0 0 0-1.928-8.172h3.971a16.345 16.345 0 1 0-8.855-30.052 24.492 24.492 0 1 0-27.869 29.692 18.364 18.364 0 0 0-2.067 7.942 32.681 32.681 0 1 1 34.636-48.025 24.488 24.488 0 1 1 4.155 48.615zM44.962 50.937l7.223 7.224a10.215 10.215 0 1 1-14.447 0z"
+				fill="#fff" fill-rule="evenodd" />
+		</symbol>
+		<symbol id="icon-seattle" viewBox="0 0 80.907 73.531">
+			<path class="dash-animation"
+				d="M77.222 58.818H3.689a3.677 3.677 0 1 1 0-7.353h73.533a3.677 3.677 0 0 1 0 7.353zm0-14.706H3.689a3.677 3.677 0 0 1 0-7.354h73.533a3.677 3.677 0 0 1 0 7.354zm-18.384-22.06a14.608 14.608 0 0 0-7.967 2.373 22.035 22.035 0 0 0-43.506 4.98H.012A29.406 29.406 0 0 1 55.1 15.075a21.627 21.627 0 0 1 24.516 14.33h-8.054a14.69 14.69 0 0 0-12.724-7.353zM3.689 66.172h73.533a3.677 3.677 0 0 1 0 7.353H3.689a3.677 3.677 0 1 1 0-7.353z"
+				fill="#fff" fill-rule="evenodd" />
+		</symbol>
+		<symbol id="icon-brooklyn" viewBox="0 0 85.969 76.406">
+			<path class="dash-animation"
+				d="M82.769 41.399h-6.368a3.184 3.184 0 0 1 0-6.367h6.368a3.184 3.184 0 1 1 0 6.367zM70.256 20.205a3.184 3.184 0 1 1-4.5-4.5l4.5-4.5a3.184 3.184 0 1 1 4.5 4.5zm-4.692 24.848a19.1 19.1 0 0 1-14.637 31.369H25.456a25.471 25.471 0 1 1 7.2-49.9 19.08 19.08 0 0 1 32.912 18.531zm-59.211 5.9a19.1 19.1 0 0 0 19.1 19.1h25.471a12.736 12.736 0 1 0-6.9-23.416 19.081 19.081 0 0 0-37.668 4.314zm41.39-25.471a12.692 12.692 0 0 0-9.016 3.742 25.607 25.607 0 0 1 8.962 9.32 18.253 18.253 0 0 1 12.551 2.1A12.718 12.718 0 0 0 47.747 25.48zm0-12.735a3.184 3.184 0 0 1-3.184-3.184V3.195a3.184 3.184 0 1 1 6.368 0v6.368a3.185 3.185 0 0 1-3.18 3.182zm-22.514 7.46l-4.5-4.5a3.184 3.184 0 0 1 4.5-4.5l4.5 4.5a3.184 3.184 0 1 1-4.496 4.498z"
+				fill="#fff" fill-rule="evenodd" />
+		</symbol>
+		<symbol id="icon-portland" viewBox="0 0 84.813 87.938">
+			<path class="dash-animation"
+				d="M81.658 40.842h-6.281a3.141 3.141 0 0 1 0-6.281h6.281a3.141 3.141 0 1 1 0 6.281zM69.319 19.935a3.14 3.14 0 0 1-4.441-4.441l4.441-4.441a3.141 3.141 0 1 1 4.442 4.441zm-4.628 24.511a18.818 18.818 0 0 1-8.157 29.847v-6.881a12.548 12.548 0 1 0-13.087-21.4 18.822 18.822 0 1 0-30.881 18.271v7.719a25.111 25.111 0 0 1 19.667-45.833 18.82 18.82 0 0 1 32.458 18.277zM47.112 25.139a12.521 12.521 0 0 0-8.893 3.691 25.264 25.264 0 0 1 8.841 9.193A18.012 18.012 0 0 1 59.44 40.1a12.544 12.544 0 0 0-12.328-14.961zm0-12.562a3.14 3.14 0 0 1-3.14-3.141V3.155a3.141 3.141 0 1 1 6.281 0v6.281a3.141 3.141 0 0 1-3.141 3.141zm-22.207 7.358l-4.441-4.441a3.14 3.14 0 1 1 4.441-4.441l4.442 4.441a3.141 3.141 0 0 1-4.442 4.441zm-2.917 42.891a3.141 3.141 0 1 1-3.141 3.14 3.14 3.14 0 0 1 3.141-3.14zm0 12.562a3.141 3.141 0 1 1-3.141 3.14 3.14 3.14 0 0 1 3.141-3.14zm12.562-6.281a3.141 3.141 0 1 1-3.14 3.14 3.14 3.14 0 0 1 3.14-3.14zm0 12.562a3.141 3.141 0 1 1-3.14 3.14 3.14 3.14 0 0 1 3.14-3.14zm12.562-18.843a3.141 3.141 0 1 1-3.14 3.14 3.14 3.14 0 0 1 3.14-3.14zm0 12.562a3.141 3.141 0 1 1-3.14 3.14 3.14 3.14 0 0 1 3.14-3.14z"
+				fill="#fff" fill-rule="evenodd" />
+		</symbol>
+		<symbol id="icon-hometown" viewBox="0 0 62.281 63.438">
+			<path class="dash-animation"
+				d="M56.213 49.529v.06h-4.324a2.306 2.306 0 1 1 0-4.612h3.459a2.306 2.306 0 0 0 0-4.612 2.306 2.306 0 1 1 .465-4.565 6.9 6.9 0 0 1 .4 13.729zm-6.3-23h.011a13.794 13.794 0 0 1 .577 2.149 11.444 11.444 0 0 0-5.591-2.093c-.011-.02-.025-.037-.037-.056a9.182 9.182 0 0 0-12.977-3.123 13.82 13.82 0 0 0-27.287 3.123 13.836 13.836 0 0 0 13.836 13.836h25.366a2.306 2.306 0 1 0 0-4.612 2.306 2.306 0 1 1 .465-4.565 6.9 6.9 0 0 1 .4 13.729v.06H18.452a2.306 2.306 0 0 0 0 4.612h26.231v.06a6.9 6.9 0 0 1-.4 13.729 2.306 2.306 0 1 1-.465-4.565 2.306 2.306 0 1 0 0-4.612h-26.23v-.059a6.917 6.917 0 0 1-6.054-6.859 6.8 6.8 0 0 1 .892-3.333A18.438 18.438 0 1 1 25 9.289 13.77 13.77 0 0 1 40.6.254a9.2 9.2 0 0 0 11.046 11.047 13.7 13.7 0 0 1-3.422 11.9 13.851 13.851 0 0 1 1.693 3.328zM35.987 4.862a9.214 9.214 0 0 0-6.831 6.658 18.562 18.562 0 0 1 5.4 6.022 13.279 13.279 0 0 1 10.422 2.382 9.214 9.214 0 0 0 2.06-4.016A13.836 13.836 0 0 1 35.991 4.862z"
+				fill="#fff" fill-rule="evenodd" />
+		</symbol>
+		<symbol id="icon-san-jose" viewBox="-2 0 89.812 66.125">
+			<path class="dash-animation"
+				d="M31.558 63.129a31.571 31.571 0 1 1 27.559-46.952 23.65 23.65 0 1 1 4.012 46.952H31.558zm31.571-7.893a15.786 15.786 0 1 0-8.552-29.023 23.657 23.657 0 1 0-23.019 29.023h31.571z"
+				fill="#fff" fill-rule="evenodd" />
+		</symbol>
+	</svg>
+</body>
+
+</html>

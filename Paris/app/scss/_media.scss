@@ -1,0 +1,18 @@
+@import "vars";
+
+@media screen and (max-width: 560px) {
+	.widget__forecast{
+		width: 70%;
+
+	}
+	.widget__current-data {
+		margin-right: 32px;
+	}
+
+}
+@media screen and (max-width: 480px) {
+
+}
+@media screen and (max-width: 360px) {
+
+}

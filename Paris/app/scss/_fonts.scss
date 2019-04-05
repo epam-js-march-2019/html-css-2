@@ -1,0 +1,35 @@
+@font-face {
+	font-weight: 300;
+	font-family: "LatoLight";
+	font-style: normal;
+	font-display: swap;
+
+	src: url("../fonts/LatoLight/LatoLight.woff2") format("woff2"), 
+		url("../fonts/LatoLight/LatoLight.woff") format("woff"),
+		url("../fonts/LatoLight/LatoLight.eot") format("eot"),
+		url("../fonts/LatoLight/LatoLight.ttf") format("ttf");
+}
+
+@font-face {
+	font-weight: 700;
+	font-family: "LatoBold";
+	font-style: normal;
+	font-display: swap;
+
+	src: url("../fonts/LatoBold/LatoBold.woff2") format("woff2"), 
+		url("../fonts/LatoBold/LatoBold.woff") format("woff"),
+		url("../fonts/LatoBold/LatoBold.eot") format("eot"),
+		url("../fonts/LatoBold/LatoBold.ttf") format("ttf");
+}
+
+@font-face {
+	font-weight: 900;
+	font-family: "LatoBlack";
+	font-style: normal;
+	font-display: swap;
+
+	src: url("../fonts/LatoBlack/LatoBlack.woff2") format("woff2"), 
+		url("../fonts/LatoBlack/LatoBlack.woff") format("woff"),
+		url("../fonts/LatoBlack/LatoBlack.eot") format("eot"),
+		url("../fonts/LatoBlack/LatoBlack.ttf") format("ttf");
+}
