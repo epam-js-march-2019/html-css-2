@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700|Source+Sans+Pro:300,600');
+
+@font-face {
+  font-family: "Proxima Nova Bold";
+  src: url('fonts/ProximaNova-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Proxima Nova Light";
+  src: url('fonts/ProximaNova-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Proxima Nova Regular";
+  src: url('fonts/ProximaNova-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Proxima Nova Thin";
+  src: url('fonts/ProximaNovaT-Thin.woff') format('woff');
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body,
+.container {
+  height: 100%;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+ul,
+p,
+fieldset,
+input,
+h3 {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  background: url('img/background_jersey.jpg') no-repeat center center / cover;
+  width: 100%;
+  min-width: 300px;
+}
+
+.weather-widget {
+  position: relative;
+  top: 50%;
+  margin: 0 auto;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  min-width: 300px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 15px 13px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 15px 13px 4px rgba(0, 0, 0, 0.25);
+}
+
+.weather-widget__weather {
+  background-color: #f1f8f9;
+  background-image: url('img/icon_sun_and_cloud.svg');
+  background-repeat: no-repeat;
+  background-position: center 9%;
+  color: #8d9396;
+}
+
+.weather-widget__refresh-button {
+  display: block;
+  background: url('img/icon_refresh.svg') no-repeat center center / cover;
+  width: 22px;
+  height: 20px;
+  float: right;
+  margin: 4.4% 4.4% auto auto;
+}
+
+.weather-widget__weather-list {
+  margin-top: 35%;
+  text-align: center;
+}
+
+.weather-widget__temperature {
+  font-family: 'Proxima Nova Light';
+  font-size: 57.6px;
+}
+
+.weather-widget__degree-symbol {
+  font-family: 'Proxima Nova Thin';
+  font-size: 57.6px;
+}
+
+.weather-widget__text {
+  margin-bottom: 15px;
+}
+
+.weather-widget__date {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  background: #54bae6;
+  color: white;
+  padding: 5px 36%;
+}
+
+.weather-widget__description {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  color: #bac2c6;
+}
+
+.weather-widget__location {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #a2a9ad;
+}
+
+.weather-widget__month {
+  font-size: 14px;
+}
+
+.weather-widget__day-of-month {
+  font-size: 18px;
+}
+
+.weather-widget__details {
+  background: #2e3335;
+  color: white;
+  font-family: 'Proxima Nova Bold';
+  font-size: 14px;
+}
+
+.weather-widget__radio-group {
+  margin-top: 11.5%;
+  padding-bottom: 12.2%;
+  margin-left: 23%;
+}
+
+.weather-widget__radio-button-wrapper {
+  position: relative;
+  display: block;
+  height: 35px;
+  width: 35px;
+  float: left;
+  margin-right: 10%;
+}
+
+.weather-widget__radio-button {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.weather-widget__radio-button:checked ~ .weather-widget__radio-custom {
+  background: white;
+  border: 1px solid white;
+}
+
+.weather-widget__radio-custom {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  border: 1px solid #585c5d;
+}
+
+.weather-widget__radio-custom:hover {
+  background: gray;
+}
+
+@media (max-width: 320px) {
+
+  .weather-widget__month,
+  .weather-widget__day-of-month {
+    float: left;
+    font-size: 15px;
+    margin: 0 4px;
+  }
+
+  .weather-widget__details-list {
+    padding-top: 20px;
+  }
+
+  .weather-widget__wind,
+  .weather-widget__humidity,
+  .weather-widget__sun {
+    text-align: center;
+    padding: 4px;
+    float: left;
+  }
+
+  .weather-widget__wind {
+    background: url('img/icon_wind.svg') no-repeat 10% 65%;
+    padding-left: 13%;
+    margin-left: 10%;
+  }
+
+  .weather-widget__humidity {
+    background: url('img/icon_drop.svg') no-repeat 10% 65%;
+    padding-left: 13%;
+  }
+
+  .weather-widget__sun {
+    background: url('img/icon_sun.svg') no-repeat 10% 65%;
+    padding-left: 13%;
+  }
+
+}
+
+@media (min-width: 321px) {
+  .weather-widget {
+    max-width: 500px;
+    min-width: 333px;
+  }
+
+  .weather-widget__temperature {
+    margin-left: 5.4%;
+  }
+
+  .weather-widget__weather-list {
+    margin-top: 52%;
+    padding-bottom: 4.3%;
+  }
+
+  .weather-widget__weather {
+    background-position: 51% 33%;
+  }
+
+  .weather-widget__temperature,
+  .weather-widget__text {
+    float: left;
+    text-align: left;
+  }
+
+  .weather-widget__text {
+    margin-left: 3.4%;
+    margin-top: 2%;
+
+  }
+
+  .weather-widget__date {
+    float: right;
+    padding: 4% 4% 4% 5.1%;
+    text-align: center;
+  }
+
+  .weather-widget__details {
+    padding-top: 11.8%;
+  }
+
+  .weather-widget__details-list {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .weather-widget__wind,
+  .weather-widget__humidity,
+  .weather-widget__sun {
+    float: left;
+    padding-bottom: 4px;
+  }
+
+  .weather-widget__wind {
+    background: url('img/icon_wind.svg') no-repeat 0 65%;
+    padding-left: 16%;
+  }
+
+  .weather-widget__humidity {
+    background: url('img/icon_drop.svg') no-repeat 0 65%;
+    padding-left: 13%;
+    margin-left: 9%;
+  }
+
+  .weather-widget__sun {
+    background: url('img/icon_sun.svg') no-repeat 0 65%;
+    padding-left: 13%;
+    margin-left: 13%;
+  }
+
+  .weather-widget__radio-group {
+    margin: 0 auto;
+    width: 52px;
+    margin-top: 9.5%;
+    padding-bottom: 4.2%;
+  }
+  
+  .weather-widget__radio-button-wrapper {
+    position: relative;
+    display: block;
+    height: 13px;
+    width: 13px;
+    float: left;
+    margin-right: 7%;
+  }
+  
+  .weather-widget__radio-custom {
+    height: 9px;
+    width: 9px;
+  }
+  
+  .weather-widget__radio-custom:hover {
+    background: gray;
+  }
+
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
