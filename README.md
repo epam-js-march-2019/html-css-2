@@ -1,9 +1,9 @@
 # Homework #1. HTML, CSS.
 
 ## О проекте.
-- Cubes - верстка с помощью float.
+- [Cubes](https://aleksandrgorodetskii.github.io/html-css-2/Cubes/app/) - верстка с помощью float.
 - [Paris](https://aleksandrgorodetskii.github.io/html-css-2/Paris/app/) - верстка с помощью flexbox.
-- Tokyo - верстка с помощью grid.
+- Tokyo - верстка с помощью grid (work in progress).
 
 ### В работе были использованы.
 
