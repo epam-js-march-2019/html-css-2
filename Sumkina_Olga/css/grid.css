@@ -21,150 +21,171 @@
 	font-weight: 300;
 }
 
-/*.weather-info:after {
+.weather-info__weather {
+	position: relative;
+	left: 15em;
+}
+
+.widget__weather-info {
+	padding: 40px 40px 0 0;
+}
+
+/* current date */
+
+.weather-info__date {
+	padding: 20px 5% 12% 0;
+	position: relative;
+	left: 21em;
+}
+
+.date__about-weather {
+	margin: 0;
+}
+
+.date__day-of-week {
+	font-size: 180%;
+}
+
+.date__current-date {
+	font-size: 100%;
+}
+
+.weather__grad {
+	font-size: 550%;
+	font-weight: 700;
+}
+
+.weather__location {
+	font-size: 150%;
+}
+
+.weather__wind span {
+	font-weight: 700;
+	font-size: 30px;
+}
+
+.wind__wind-icon {
+	margin-right: 10px;
+}
+
+/* forecast */
+
+.forecast {
+	display: grid;
+	display: -ms-grid;
+	grid-template-rows: 100%;
+	grid-template-columns: 10% 20% 20% 20% 20% 10%;
+	-ms-grid-column: 1fr 1fr 2fr 2fr 2fr 2fr 1fr;
+	-ms-grid-row: 1;
+	color: white;
+	width: 100%;
+	background-color: rgba(0,0,0, 0.2);
+}
+
+.forecast:after {
 	content: ".";
 	clear: both;
 	display: block;
 	height: 0;
 	visibility: hidden;
-	}*/
+}
+
+.widget__forecast {
+	text-align: center;
+	box-sizing: border-box;
+	margin: 115px auto 0 auto;
+	padding: 10px 10% 0 10%;
+}
+
+.widget__forecast .back {
+	display: -ms-grid;
+	-ms-grid-column: 1;
+}
+
+.widget__forecast .forecast__day:nth-child(3){
+	display: -ms-grid;
+	-ms-grid-column: 2;
+}
+
+.widget__forecast .forecast__day:nth-child(4){
+	display: -ms-grid;
+	-ms-grid-column: 3;
+}
+
+.widget__forecast .forecast__day:nth-child(5){
+	display: -ms-grid;
+	-ms-grid-column: 4;
+}
+
+.widget__forecast .forecast__day:nth-child(6){
+	display: -ms-grid;
+	-ms-grid-column: 5;
+}
+
+
+.widget__forecast .next {
+	display: -ms-grid;
+	-ms-grid-column: 6;
+}
+
+.forecast__day {
+	border-right: 1px solid white;
+	font-family: 'Lato';
+	padding: 0 20px;
+
+}
+
+.forecast__day span {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.forecast__img {
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+	width: 50%;
+}
+
+.forecast section:nth-child(6) {
+	border: 0;
+	margin-right: 10px;
+}
+
+.forecast section:nth-child(6) img {
+	margin: 5px;
+}
+
+.forecast__slider {
+	padding-top: 50%;
+}
+
+@media screen and (max-width: 600px){
+	.widget {
+		max-width: 100%;
+	}
+
+	.weather-info {
+		background: rgba(0,0,0,0.1);
+	}
 
 	.weather-info__weather {
-		position: relative;
-		left: 15em;
+		left: 3em;
 	}
-
-	.widget__weather-info {
-		padding: 40px 40px 0 0;
-	}
-
-	/* current date */
 
 	.weather-info__date {
-		padding: 20px 5% 12% 0;
-		position: relative;
-		left: 21em;
-	}
-
-	.date__about-weather {
-		margin: 0;
-	}
-
-	.date__day-of-week {
-		font-size: 180%;
-	}
-
-	.date__current-date {
-		font-size: 100%;
-	}
-
-	.weather__grad {
-		font-size: 550%;
-		font-weight: 700;
-	}
-
-	.weather__location {
-		font-size: 150%;
-	}
-
-	.weather__wind span {
-		font-weight: 700;
-		font-size: 30px;
-	}
-
-	.wind__wind-icon {
-		margin-right: 10px;
-	}
-
-	/* forecast */
-
-	.forecast {
-		display: grid;
-		display: -ms-grid;
-		grid-template-rows: 100%;
-		grid-template-columns: 10% 20% 20% 20% 20% 10%;
-		-ms-grid-column: 1fr 1fr 2fr 2fr 2fr 2fr 1fr;
-		-ms-grid-row: 1;
-		color: white;
-		width: 100%;
-		background-color: rgba(0,0,0, 0.2);
-	}
-
-	.forecast:after {
-		content: ".";
-		clear: both;
-		display: block;
-		height: 0;
-		visibility: hidden;
+		left: 3em;
 	}
 
 	.widget__forecast {
-		text-align: center;
-		box-sizing: border-box;
-		margin: 115px auto 0 auto;
-		padding: 10px 10% 0 10%;
-	}
-
-	.widget__forecast .back {
-		display: -ms-grid;
-		-ms-grid-column: 1;
-	}
-
-	.widget__forecast .forecast__day:nth-child(3){
-		display: -ms-grid;
-		-ms-grid-column: 2;
-	}
-
-	.widget__forecast .forecast__day:nth-child(4){
-		display: -ms-grid;
-		-ms-grid-column: 3;
-	}
-
-	.widget__forecast .forecast__day:nth-child(5){
-		display: -ms-grid;
-		-ms-grid-column: 4;
-	}
-
-	.widget__forecast .forecast__day:nth-child(6){
-		display: -ms-grid;
-		-ms-grid-column: 5;
-	}
-
-
-	.widget__forecast .next {
-		display: -ms-grid;
-		-ms-grid-column: 6;
+		padding: 0;
+		margin-top: 135px;
 	}
 
 	.forecast__day {
-		border-right: 1px solid white;
-		font-family: 'Lato';
-		padding: 0 20px;
+		font-size: 70%;
+		padding: 0;
 
 	}
-
-	.forecast__day span {
-		display: block;
-		margin: 0 auto;
-		text-align: center;
-	}
-
-	.forecast__img {
-		display: block;
-		margin: 0 auto;
-		margin-top: 30px;
-		width: 50%;
-	}
-
-	.forecast section:nth-child(6) {
-		border: 0;
-		margin-right: 10px;
-	}
-
-	.forecast section:nth-child(6) img {
-		margin: 5px;
-	}
-
-	.forecast__slider {
-		padding-top: 50%;
-	}
+}
