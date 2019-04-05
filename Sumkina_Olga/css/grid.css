@@ -193,7 +193,7 @@
 
 }
 
-/* стили только для IE10 и IE11 */ 
+/* стили для IE10 и IE11 */ 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { 
 	.weather-info__weather {
 		left: 27em;
@@ -203,25 +203,39 @@
 		height: 100px;
 	}
 	.forecast__day {
-		width: 90%;
 		position: relative;
 		left: 30px;
-		height: auto
+		height: auto;
+		margin: 15px;
+	
 	}
 
 	.forecast__day img {
 		width: 80%;
 		position: relative;
-		top: 20px;
-	}
-
+	
+}
 	.forecast__day span {
 		font-size: 70%;
 		position: relative;
-		top: 40px
+		top: -20px;
 	}
 
 	.forecast__day span:nth-child(4) {
 		top: 40px;
+	}
+
+	.next {
+		padding-left: 40px
+	}
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)  and (max-width: 600px){
+	.weather {
+		left: 55%;
+	}
+
+	.date {
+		left: 35%;
 	}
 }
