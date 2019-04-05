@@ -11,6 +11,8 @@
 
 .weather-info {
 	display: grid;
+	grid-template-columns: 30% 70%;
+	grid-template-rows: 100%;
 	display: -ms-grid;
 	-ms-grid-column: 2;
 	-ms-grid-row: 1;
