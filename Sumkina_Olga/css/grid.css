@@ -186,6 +186,42 @@
 	.forecast__day {
 		font-size: 70%;
 		padding: 0;
+		position: relative;
+		left: 10px;
 
+	}
+
+}
+
+/* стили только для IE10 и IE11 */ 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { 
+	.weather-info__weather {
+		left: 27em;
+	}
+
+	.forecast {
+		height: 100px;
+	}
+	.forecast__day {
+		width: 90%;
+		position: relative;
+		left: 30px;
+		height: auto
+	}
+
+	.forecast__day img {
+		width: 80%;
+		position: relative;
+		top: 20px;
+	}
+
+	.forecast__day span {
+		font-size: 70%;
+		position: relative;
+		top: 40px
+	}
+
+	.forecast__day span:nth-child(4) {
+		top: 40px;
 	}
 }
