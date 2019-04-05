@@ -1,6 +1,9 @@
 # Homework #1. HTML, CSS.
 
 ## О проекте.
+- Cubes - верстка с помощью float.
+- [Paris](https://aleksandrgorodetskii.github.io/html-css-2/Paris/app/) - верстка с помощью flexbox.
+- Tokyo - верстка с помощью grid.
 
 ### В работе были использованы.
 
@@ -9,7 +12,7 @@
 - Autoprefixer - поддержка IE11.
 - Cleancss - минификация файла стилей.
 - Normalize.css - нормализация дефолтных стилей.
-- Работа с инлайновой векторной графикой через `symbol`.
+
 
 ## О задании.
 
