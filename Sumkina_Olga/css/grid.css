@@ -81,6 +81,8 @@
 	.forecast {
 		display: grid;
 		display: -ms-grid;
+		grid-template-rows: 100%;
+		grid-template-columns: 10% 20% 20% 20% 20% 10%;
 		-ms-grid-column: 1fr 1fr 2fr 2fr 2fr 2fr 1fr;
 		-ms-grid-row: 1;
 		color: white;
