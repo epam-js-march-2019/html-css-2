@@ -207,14 +207,14 @@
 		left: 30px;
 		height: auto;
 		margin: 15px;
-	
+
 	}
 
 	.forecast__day img {
 		width: 80%;
 		position: relative;
-	
-}
+
+	}
 	.forecast__day span {
 		font-size: 70%;
 		position: relative;
@@ -230,6 +230,20 @@
 	}
 }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)  and (max-width: 400px){
+	.weather {
+		left: 55%;
+	}
+
+	.date {
+		left: 35%;
+	}
+
+	.forecast__day {
+		margin: 0;
+	}
+}
+
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)  and (max-width: 600px){
 	.weather {
 		left: 55%;
@@ -237,5 +251,9 @@
 
 	.date {
 		left: 35%;
+	}
+
+	.forecast__day {
+		margin: 15px 35px 0 35px;
 	}
 }
