@@ -1,4 +1,51 @@
 @import "vars";
+@import "vars";
 
+@media screen and (max-width: 650px) {
+  :root {
+    font-size: 8px;
+  }
 
+}
+
+@media screen and (max-width: 500px) {
+
+	:root {
+    font-size: 6px;
+	}
+
+	.widget__hometown-item {
+		font-size: 1.5rem;
+	}
+
+	.widget {
+		font-size: 2rem;
+	}
+
+}
+
+@media screen and (max-width: 380px) {
+
+	:root {
+    font-size: 5px;
+	}
+
+	.widget {
+		font-size: 2.2rem;
+	}
+
+	.widget__day {
+		margin-bottom: 3.1rem;
+	}
+
+	.widget__hometown-item {
+		font-size: 1.65rem;
+	}
+
+	.widget__icon--hometown-small {
+    width: 2.4rem;
+		height: 2.4rem;
+	}
+
+}
 

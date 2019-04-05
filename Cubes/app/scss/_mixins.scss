@@ -1,7 +1,7 @@
 @mixin title {
 	margin: 0;
-	font-size: 16px;
-	line-height: 12px;
+	font-size: 1.6rem;
+	line-height: 1.2rem;
 	font-weight: bold;
 	font-family: $default-font;
 	text-align: center;
@@ -10,8 +10,8 @@
 }
 
 @mixin defaultItemSize {
-	width: 205px;
-	height: 205px;
+	width: 20.5rem;
+	height: 20.5rem;
 }
 
 @mixin clearfix {
