@@ -30,9 +30,8 @@
 	}*/
 
 	.weather-info__weather {
-		float: left;
 		position: relative;
-		left: 50%;
+		left: 15em;
 	}
 
 	.widget__weather-info {
@@ -43,7 +42,8 @@
 
 	.weather-info__date {
 		padding: 20px 5% 12% 0;
-
+		position: relative;
+		left: 21em;
 	}
 
 	.date__about-weather {
@@ -165,7 +165,6 @@
 		margin: 5px;
 	}
 
-	.forecast__day img {
-		width: 60%;
-
+	.forecast__slider {
+		padding-top: 50%;
 	}
