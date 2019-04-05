@@ -25,139 +25,143 @@
 	display: block;
 	height: 0;
 	visibility: hidden;
-}*/
+	}*/
 
-.weather-info__weather {
-	float: left;
-	position: relative;
-	left: 50%;
-}
+	.weather-info__weather {
+		float: left;
+		position: relative;
+		left: 50%;
+	}
 
-.widget__weather-info {
-	padding: 40px 40px 0 0;
-}
+	.widget__weather-info {
+		padding: 40px 40px 0 0;
+	}
 
-/* current date */
+	/* current date */
 
-.weather-info__date {
-	padding: 20px 5% 12% 0;
-	
-}
+	.weather-info__date {
+		padding: 20px 5% 12% 0;
 
-.date__about-weather {
-	margin: 0;
-}
+	}
 
-.date__day-of-week {
-	font-size: 180%;
-}
+	.date__about-weather {
+		margin: 0;
+	}
 
-.date__current-date {
-	font-size: 100%;
-}
+	.date__day-of-week {
+		font-size: 180%;
+	}
 
-.weather__grad {
-	font-size: 550%;
-	font-weight: 700;
-}
+	.date__current-date {
+		font-size: 100%;
+	}
 
-.weather__location {
-	font-size: 150%;
-}
+	.weather__grad {
+		font-size: 550%;
+		font-weight: 700;
+	}
 
-.weather__wind span {
-	font-weight: 700;
-	font-size: 30px;
-}
+	.weather__location {
+		font-size: 150%;
+	}
 
-.wind__wind-icon {
-	margin-right: 10px;
-}
+	.weather__wind span {
+		font-weight: 700;
+		font-size: 30px;
+	}
 
-/* forecast */
+	.wind__wind-icon {
+		margin-right: 10px;
+	}
 
-.forecast {
-	display: grid;
-	display: -ms-grid;
-	-ms-grid-column: 1fr 1fr 2fr 2fr 2fr 2fr 1fr;
-	-ms-grid-row: 1;
-	color: white;
-	width: 100%;
-	background-color: rgba(0,0,0, 0.2);
-}
+	/* forecast */
 
-.forecast:after {
-	content: ".";
-	clear: both;
-	display: block;
-	height: 0;
-	visibility: hidden;
-}
+	.forecast {
+		display: grid;
+		display: -ms-grid;
+		-ms-grid-column: 1fr 1fr 2fr 2fr 2fr 2fr 1fr;
+		-ms-grid-row: 1;
+		color: white;
+		width: 100%;
+		background-color: rgba(0,0,0, 0.2);
+	}
 
-.widget__forecast {
-	text-align: center;
-	box-sizing: border-box;
-	margin: 115px auto 0 auto;
-	padding: 30px 10% 0 10%;
-}
+	.forecast:after {
+		content: ".";
+		clear: both;
+		display: block;
+		height: 0;
+		visibility: hidden;
+	}
 
-.widget__forecast .back {
-	display: -ms-grid;
-	-ms-grid-column: 1;
-}
+	.widget__forecast {
+		text-align: center;
+		box-sizing: border-box;
+		margin: 115px auto 0 auto;
+		padding: 30px 10% 0 20%;
+	}
 
-.widget__forecast .forecast__day:nth-child(3){
-	display: -ms-grid;
-	-ms-grid-column: 2;
-}
+	.widget__forecast .back {
+		display: -ms-grid;
+		-ms-grid-column: 1;
+	}
 
-.widget__forecast .forecast__day:nth-child(4){
-	display: -ms-grid;
-	-ms-grid-column: 3;
-}
+	.widget__forecast .forecast__day:nth-child(3){
+		display: -ms-grid;
+		-ms-grid-column: 2;
+	}
 
-.widget__forecast .forecast__day:nth-child(5){
-	display: -ms-grid;
-	-ms-grid-column: 4;
-}
+	.widget__forecast .forecast__day:nth-child(4){
+		display: -ms-grid;
+		-ms-grid-column: 3;
+	}
 
-.widget__forecast .forecast__day:nth-child(6){
-	display: -ms-grid;
-	-ms-grid-column: 5;
-}
+	.widget__forecast .forecast__day:nth-child(5){
+		display: -ms-grid;
+		-ms-grid-column: 4;
+	}
+
+	.widget__forecast .forecast__day:nth-child(6){
+		display: -ms-grid;
+		-ms-grid-column: 5;
+	}
 
 
-.widget__forecast .next {
-	display: -ms-grid;
-	-ms-grid-column: 6;
-}
+	.widget__forecast .next {
+		display: -ms-grid;
+		-ms-grid-column: 6;
+	}
 
-.forecast__day {
-	border-right: 1px solid white;
-	font-family: 'Lato';
-	width: 23%;
-}
+	.forecast__day {
+		border-right: 1px solid white;
+		font-family: 'Lato';
+		padding: 0 20px;
 
-.forecast__day span {
-	display: block;
-	margin: 0 auto;
-	text-align: center;
-}
+	}
 
-.forecast__img {
-	display: block;
-	margin: 0 auto;
-}
+	.forecast__day span {
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+	}
 
-.forecast section:nth-child(6) {
-	border: 0;
-	margin-right: 10px;
-}
+	.forecast__img {
+		display: block;
+		margin: 0 auto;
+		margin-top: 30px;
+		width: 50%;
+	}
 
-.forecast section:nth-child(6) img {
-	margin: 5px;
-}
+	.forecast section:nth-child(6) {
+		border: 0;
+		margin-right: 10px;
+	}
 
-.forecast__slider {
+	.forecast section:nth-child(6) img {
+		margin: 5px;
+	}
 
-}
+	.forecast__day img {
+		width: 60%;
+
+	}
