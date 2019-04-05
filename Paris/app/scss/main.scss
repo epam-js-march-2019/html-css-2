@@ -130,7 +130,6 @@ body {
 
   &__item {
     width: 16.5%;
-    height: 100%;
     text-align: center;
     position: relative;
     display: block;
@@ -148,7 +147,7 @@ body {
       height: 9rem;
       width: 0.2rem;
       background-color: rgba(255, 255, 255, 0.4);
-      margin-left: 5rem;
+      left: 98%;
       top: 1rem;
     }
     &:first-child::after,
@@ -195,7 +194,7 @@ body {
 
   .widget__current-params {
     width: 40%;
-  }
+	}
 }
 
 @media screen and (max-width: 420px) {
@@ -233,7 +232,6 @@ body {
 
   .widget__item::after {
     height: 6rem;
-    margin-left: 3rem;
   }
 
   .widget__item h2 {
