@@ -1,0 +1,167 @@
+div {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+#app {
+	width: 800px;
+	height: 600px;
+	margin: auto;
+	background-image: url("main_background.jpg");
+}
+
+#content {
+	width: 581px;
+	height: 438px;
+	margin: auto;
+	position: relative;
+	top: 81px;
+	background-color: white;
+	border-radius: 3px;
+	box-shadow: 0 2px 21px 0 rgba(0, 0, 0, 0.44);
+}
+
+#left {
+	width: 290px;
+	height: 438px;
+	float: left;
+	background-image: url("left_background.jpg");
+	border-radius: 3px 0 0 3px;
+	background-clip: padding-box;
+}
+
+#right {
+	width: 291px;
+	height: 438px;
+	float: left;
+}
+
+#icon {
+	height: 240px;
+}
+
+#icon img {
+	position: relative;
+	top: 42px;
+	left: 76px;
+}
+
+#weather {
+	height: 94px;
+	background-color: rgba(46, 28, 37, .89);
+	font-family: 'Dosis', sans-serif;
+	font-weight: 200;
+	font-size: 36px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#date {
+	height: 104px;
+	background-color: rgba(119, 25, 33, .89);
+	font-family: 'Dosis', sans-serif;
+	font-weight: 300;
+	font-size: 22px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*Right pane*/
+
+#temperature {
+	box-sizing: border-box;
+	height: 144px;
+	width: 208px;
+	margin: 0 auto;
+	border-bottom: 1px solid #771921;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 200;
+	font-size: 101px;
+	color: #771921;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+#graph {
+	box-sizing: border-box;
+	height: 97px;
+	width: 208px;
+	margin: 0 auto;
+	border-bottom: 1px solid #771921;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#days {
+	box-sizing: border-box;
+	width: 208px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+#days div {
+	width: 50px;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1em;
+}
+
+#days div img {
+	display: block;
+	margin: 25px auto 0;
+}
+
+.day-name {
+	height: 49px;
+	color: #771921;
+	text-align: center;
+	border-bottom: 1px solid #771921;
+}
+.day-name span {
+	display: block;
+	padding-top: 17px;
+}
+
+.day-temp {
+	height: 83px;
+	text-align: center;
+}
+.day-temp-day{
+	color: #771921;
+	padding-top: 12px;
+}
+.day-temp-night{
+	color: #332126;
+	padding-top: 12px;
+}
+
+@media (max-width: 800px)
+{
+	#app {
+		width: auto;
+	}
+}
+
+@media (max-width: 581px)
+{
+	#app {
+		height: 886px;
+		background-size: cover;
+	}
+	#content {
+		width: 290px;
+		height: 876px;
+		top: 5px;
+	}
+}
+

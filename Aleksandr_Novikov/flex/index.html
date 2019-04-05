@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500" rel="stylesheet">
+	<title>Tokyo Flex</title>
+</head>
+
+<body>
+	<div id="app">
+		<div id="content">
+
+			<div id="left">
+				<div id="icon" aria-hidden="true">
+					<img src="sun.png" alt="sun" />
+				</div>
+				<div
+					id="weather"
+					aria-labelledby="date"
+				>
+					Sunny
+				</div>
+				<div
+					id="date"
+					aria-level="1"
+					role="heading"
+					aria-labelledby="weather"
+				>
+					Tokyo - Wednesday, July 31
+				</div>
+			</div>
+
+			<div id="right">
+				<div
+					id="temperature"
+				>
+					28&nbsp;&deg;C
+				</div>
+				<div id="graph" aria-hidden="true">
+					<img src="graph.png" alt="temperature graphic" />
+				</div>
+
+				<div id="days" aria-hidden="true">
+					<div>
+						<img src="day_sunny.png" alt="sunny" />
+						<div class="day-name">
+							<span>Thu</span>
+						</div>
+						<div class="day-temp">
+							<div class="day-temp-day">28&deg;C</div>
+							<div class="day-temp-night">18&deg;C</div>
+						</div>
+					</div>
+					<div>
+						<img src="day_partly_cloudy.png" alt="partly cloudy" />
+						<div class="day-name">
+							<span>Fri</span>
+						</div>
+						<div class="day-temp">
+							<div class="day-temp-day">22&deg;C</div>
+							<div class="day-temp-night">20&deg;C</div>
+						</div>
+					</div>
+					<div>
+						<img src="day_partly_cloudy.png" alt="partly cloudy" />
+						<div class="day-name">
+							<span>Sat</span>
+						</div>
+						<div class="day-temp">
+							<div class="day-temp-day">30&deg;C</div>
+							<div class="day-temp-night">27&deg;C</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
