@@ -1,0 +1,184 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+    font-family: AvenirNext; 
+    src: url(fonts/8143.otf); 
+ }
+
+
+
+.widget
+{
+	background: url(images/background.png) no-repeat;
+	background-position: center center;
+	background-size: cover; 
+	margin: auto; 
+	width:100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+
+
+.widget__block
+{
+	box-shadow: 0 0 30px rgba(0,0,0);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	width: 618px;    
+}
+
+.widget__block__element 
+{
+	width: 204px;
+	height: 204px;
+	border: solid 0.3px rgb(0,0,0,0.25);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+	
+.content
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;	
+}
+
+.lightblue
+{
+	background-color: rgb(6,179,219);
+	box-shadow: 
+	inset -1px 0px 1px rgb(255,255,255,0.7), 
+	inset 0px -1px 1px rgb(255,255,255,0.7);
+}
+.green 
+{
+	background-color: rgb(78,212,134);
+	box-shadow: inset 1px 0px 1px rgb(255,255,255,0.7), /*левая граница*/
+	inset -1px 0px 1px rgb(255,255,255,0.7), /*right*/
+	inset 0px -1px 1px rgb(255,255,255,0.7);
+}
+.blue
+{
+	background-color: rgb(97,57,246);
+	box-shadow: inset 1px 0px 1px rgb(255,255,255,0.7),
+	inset 0px -1px 1px rgb(255,255,255,0.7);
+}
+
+.yellow
+{
+
+	background-color: rgb(227,182,61);
+	box-shadow: inset -1px 0px 1px rgb(255,255,255,0.7),
+	inset 0px 1px 1px rgb(255,255,255,0.7);
+}
+.red
+{
+	background-color: rgb(220,61,102);
+	box-shadow: 
+	inset -1px 0px 1px rgb(255,255,255,0.7),
+	inset 0px 1px 1px rgb(255,255,255,0.7),
+	inset 1px 0px 1px rgb(255,255,255,0.7),
+	inset 0 -102px rgb(39,36,37,0.22);
+	 
+}
+.purple
+{
+	background-color: rgb(189,84,205);
+	box-shadow: inset 1px 0px 1px rgb(255,255,255,0.7),
+	inset 0px 1px 1px rgb(255,255,255,0.7);
+
+}
+.label
+{
+	padding-top: 27px;
+	display: flex;
+	flex-direction: row;
+
+}
+.days td
+{
+	font-size: 11px;
+}
+
+.red .theimage
+{
+	margin-top: 20px;
+}
+
+.days
+{
+	border-spacing: 15px 10px;
+}
+.label p, .days
+{
+	color: white;
+	font-size: 14px;
+	font-family: 'AvenirNext',sans-serif;;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 1px  rgb(0,0,0,0.25);
+}
+
+
+
+
+@media  screen and (max-width: 850px) and (min-width: 441px)
+{
+	.widget__block
+	{
+		max-width: 90%;
+		margin:10px;
+
+	}
+	.widget__block__element
+	{
+		width: 50%;
+		box-sizing: border-box;
+	}
+	.widget
+	{
+		/*height: auto;*/
+		min-width: 320px;
+	}
+		
+}
+
+
+@media screen and (max-width: 440px)
+{
+	.widget
+	{
+		height: auto;
+		min-width: 320px;
+	}
+
+	.widget__block
+	{
+		max-width: 90%;
+		width: 206px;
+		margin: 10px;
+		
+		
+	}
+	.widget__block__element
+	{
+		width: 100%;
+		min-width: 204px;
+		box-sizing: border-box;
+
+		
+	}
+}
+
