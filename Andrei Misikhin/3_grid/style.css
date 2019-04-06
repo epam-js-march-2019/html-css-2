@@ -131,7 +131,7 @@ input {
   display: grid;
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
-  -ms-grid-rows: 0% 72% 28%;
+  -ms-grid-rows: 0% 73% 28%;
   grid-template-rows: 1fr 0.7fr 0.5fr;
       grid-template-areas:
     "temperature"
@@ -369,6 +369,30 @@ input {
 
 .weather-widget__radio-custom:hover {
   background: gray;
+}
+
+@media (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .container {
+    height: 100%;
+  }
+
+  .weather-widget__date {
+    padding: 10px;
+  }
+  
+  .weather-widget {
+    position: relative;
+    top: 40%;
+    -webkit-transform: translateY(-40%);
+    -ms-transform: translateY(-40%);
+        transform: translateY(-40%);
+  }
+}
+
+@media (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: 320px) {
+  .weather-widget__date {
+    padding: 4px 120px ;
+  }
 }
 
 @media (min-width: 321px) {
