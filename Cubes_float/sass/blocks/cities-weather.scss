@@ -27,15 +27,16 @@
 .cities-weather__img {
     display: block;
     margin: 0 auto;
-    padding-top: 30px;
+    padding-top: 20px;
     &--fog {
-        padding-top: 32px;
+        padding-top: 24px;
     }
     &--sun-snow {
-        padding-top: 20px;
+        padding-top: 10px;
     }
     &--cloud {
-        padding-bottom: 15px;
+        padding-top: 32px;
+        padding-bottom: 10px;
     }
 }
 

@@ -748,7 +748,7 @@ ul {
   height: auto;
   padding: 15% 0;
   text-transform: uppercase;
-  background: url("../../../images/bg_cubes.png") no-repeat;
+  background: url("/../../images/bg_cubes.png") no-repeat;
   background-size: cover;
   display: -ms-grid;
   display: grid;
@@ -773,16 +773,6 @@ ul {
     -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr; } }
 
-.widget {
-  min-width: 320px;
-  height: auto;
-  padding: 15% 0;
-  background: url("../../../images/bg_cubes.png") no-repeat;
-  background-size: cover;
-  display: -ms-grid;
-  display: grid;
-  justify-items: center; }
-
 .cities-weather__item {
   width: 208px;
   height: 208px;
@@ -805,13 +795,14 @@ ul {
     background-color: #BD54CD; }
 
 .cities-weather__img {
-  padding-top: 30px; }
+  padding-top: 20px; }
   .cities-weather__img--fog {
-    padding-top: 32px; }
+    padding-top: 24px; }
   .cities-weather__img--sun-snow {
-    padding-top: 20px; }
+    padding-top: 10px; }
   .cities-weather__img--cloud {
-    padding-bottom: 15px; }
+    padding-top: 32px;
+    padding-bottom: 10px; }
 
 .days__list {
   background-color: #BD3559;

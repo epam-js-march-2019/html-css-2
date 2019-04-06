@@ -393,15 +393,15 @@ ul {
   height: auto;
   padding: 15% 0;
   text-transform: uppercase;
-  background: url("../../../images/bg_cubes.png") no-repeat;
+  background: url("/../../images/bg_cubes.png") no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center; }
 
 .widget__list {
   width: 208px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   box-shadow: 0px 0px 28px #000000; }
 
 @media (min-width: 600px) {
@@ -435,13 +435,14 @@ ul {
     background-color: #BD54CD; }
 
 .cities-weather__img {
-  padding-top: 30px; }
+  padding-top: 20px; }
   .cities-weather__img--fog {
-    padding-top: 32px; }
+    padding-top: 24px; }
   .cities-weather__img--sun-snow {
-    padding-top: 20px; }
+    padding-top: 10px; }
   .cities-weather__img--cloud {
-    padding-bottom: 15px; }
+    padding-top: 32px;
+    padding-bottom: 10px; }
 
 .days__list {
   background-color: #BD3559;

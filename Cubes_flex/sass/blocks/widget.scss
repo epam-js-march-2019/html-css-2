@@ -3,7 +3,7 @@
     height: auto;
     padding: 15% 0;
     text-transform: uppercase;
-    background: url("../../../images/bg_cubes.png") no-repeat;
+    background: url("/../../images/bg_cubes.png") no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -11,8 +11,8 @@
 
 .widget__list {
     width: 208px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     box-shadow: 0px 0px 28px #000000;
 }
 
