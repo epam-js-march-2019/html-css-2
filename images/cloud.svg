@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="88px" height="65px" viewBox="0 0 88 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Combined shape 88</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M500.37128,324.129159 C482.93513,324.129159 468.80036,309.99437 468.80036,292.558223 C468.80036,275.122076 482.93513,260.987287 500.37128,260.987287 C512.21942,260.987287 522.52955,267.52307 527.92973,277.177234 C529.24013,276.952449 530.56772,276.772755 531.9422,276.772755 C545.01929,276.772755 555.62039,287.37383 555.62039,300.45089 C555.62039,313.528017 545.01929,324.129159 531.9422,324.129159 L500.37128,324.129159 Z M531.9422,316.236425 C540.66023,316.236425 547.72766,309.168997 547.72766,300.45089 C547.72766,291.73285 540.66023,284.665489 531.9422,284.665489 C528.78428,284.665489 525.85775,285.615482 523.3904,287.212695 C520.95941,276.720428 511.60274,268.880021 500.37128,268.880021 C487.29419,268.880021 476.69309,279.481096 476.69309,292.558223 C476.69309,305.635283 487.29419,316.236425 500.37128,316.236425 L531.9422,316.236425 Z" id="path-1"></path>
+        <filter x="1.4%" y="2.2%" width="97.6%" height="97.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.7411765   0 0 0 0 0.32941177   0 0 0 0 0.8039216  0 0 0 0.75 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-561.000000, -355.000000)">
+            <g id="Group-2" transform="translate(93.000000, 94.000000)">
+                <g id="Group-1">
+                    <g id="Combined-shape-88">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

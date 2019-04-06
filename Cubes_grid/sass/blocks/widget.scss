@@ -1,0 +1,46 @@
+.widget {
+    min-width: 320px;
+    height: auto;
+    padding: 15% 0;
+    text-transform: uppercase;
+    background: url("../../../images/bg_cubes.png") no-repeat;
+    background-size: cover;
+    display: -ms-grid;
+    display: grid;
+    justify-items: center;
+}
+
+.widget__list {
+    width: 208px;
+    display: -ms-grid;
+    display: grid;
+     -ms-grid-columns: 1fr;      
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: $tablet-width) {
+    .widget__list {
+        width: 416px;
+         -ms-grid-columns: 1fr 1fr;      
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .widget__list {
+        width: 624px;
+         -ms-grid-columns: 1fr 1fr 1fr;      
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.widget {
+    min-width: 320px;
+    height: auto;
+    padding: 15% 0;
+    background: url("../../../images/bg_cubes.png") no-repeat;
+    background-size: cover;
+    display: -ms-grid;
+    display: grid;
+    justify-items: center;
+}

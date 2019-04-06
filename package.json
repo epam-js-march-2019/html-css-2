@@ -1,0 +1,39 @@
+{
+  "name": "html-css-2",
+  "version": "1.0.0",
+  "description": "Epam-training homework #2",
+  "main": "index.js",
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"Cubes_flex/**/**/.scss\" --syntax less",
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "gulp build",
+    "start": "gulp start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/epam-js-march-2019/html-css-2.git"
+  },
+  "author": "Anna Levchenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/epam-js-march-2019/html-css-2/issues"
+  },
+  "homepage": "https://github.com/epam-js-march-2019/html-css-2#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.5.0",
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-csso": "^3.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-posthtml": "^3.0.4",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-scss": "^1.4.0",
+    "gulp-svgstore": "^7.0.1"
+  },
+  "dependencies": {
+    "normalize.scss": "^0.1.0"
+  }
+}

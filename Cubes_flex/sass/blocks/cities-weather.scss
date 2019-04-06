@@ -1,0 +1,42 @@
+
+.cities-weather__item {
+    width: 208px;
+    height: 208px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px; 
+    &--chicago {
+        background-color: $blue;
+    }
+    &--seattle {
+        background-color: $green;
+    }
+    &--brooklyn {
+        background-color: $dark-blue;
+    }
+    &--portland {
+        background-color: $yellow;
+    }
+    &--week {
+        background-color: $crimson;
+        justify-content: space-between;
+    }
+    &--san_jose {
+        background-color: $purple;
+    }
+}
+
+.cities-weather__img {
+    padding-top: 30px;
+    &--fog {
+        padding-top: 32px;
+    }
+    &--sun-snow {
+        padding-top: 20px;
+    }
+    &--cloud {
+        padding-bottom: 15px;
+    }
+}

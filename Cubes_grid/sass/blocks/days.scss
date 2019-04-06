@@ -1,0 +1,42 @@
+
+.days__list {
+    background-color: $dark-crimson;
+    box-shadow: inset 0px 0px 35px -17px #272425;
+    box-sizing: border-box;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 12px;
+}
+
+.days__item {
+    display: -ms-grid;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.days__name {
+    margin: 0;
+}
+
+.days__temperature {
+    margin: 0;
+}
+
+.days__weather {
+    &--rain {
+        padding-top: 2px;
+    }
+    &--cloud {
+        padding-top: 4px;
+    }
+}
+
+.days__img--wind {
+   padding-top: 17px;
+}
+

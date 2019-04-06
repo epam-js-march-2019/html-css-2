@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Cubes</title>
+    <link rel="preload" href="fonts/AvenirNextCyr-Bold.woff">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+    <div class="widget__wrapper">
+       <article class="widget">
+          <h1 class="visually-hidden">Weather widget</h1>
+           <ul class="widget__list cities-weather clearfix">
+               <li class="cities-weather__item cities-weather__item--chicago">
+                   <img src="../images/rain.svg" alt="rain icon" class="cities-weather__img">
+                   <p class="cities-weather__name-tempr">Chicago/23&#176;</p>  
+               </li>
+               <li class="cities-weather__item cities-weather__item--seattle">
+                   <img src="../images/fog.svg" alt="fog icon" class="cities-weather__img cities-weather__img--fog">
+                   <p class="cities-weather__name-tempr">Seattle/34&#176;</p>
+               </li>
+               <li class="cities-weather__item cities-weather__item--brooklyn">
+                   <img src="../images/sun-cloud.svg" alt="sun-cloud icon" class="cities-weather__img">
+                   <p class="cities-weather__name-tempr">Brooklyn/55&#176;</p>
+               </li>
+               <li class="cities-weather__item cities-weather__item--portland">
+                   <img src="../images/sun-snow.svg" alt="sun-snow icon" class="cities-weather__img cities-weather__img--sun-snow">
+                   <p class="cities-weather__name-tempr">Portland/27&#176;</p>
+               </li>
+               <li class="cities-weather__item cities-weather__item--week days">
+                  <img src="../images/wind-cloud.svg" alt="wind-cloud icon" class="days__img days__img--wind">
+                   <ul class="days__list clearfix">
+                       <li class="days__item">
+                           <h3 class="days__name">Mon</h3>
+                           <img src="../images/rain-small.svg" alt="rain icon" class="days__weather days__weather--rain">
+                           <p class="days__temperature">22&#176;</p>
+                       </li>
+                       <li class="days__item">
+                           <h3 class="days__name">Tue</h3>
+                           <img src="../images/rain-small.svg" alt="rain icon" class="days__weather days__weather--rain">
+                           <p class="days__temperature">19&#176;</p>
+                       </li>
+                       <li class="days__item">
+                           <h3 class="days__name">Wen</h3>
+                           <img src="../images/cloud-small.svg" alt="cloud icon" class="days__weather days__weather--cloud">
+                           <p class="days__temperature">18&#176;</p>
+                       </li>
+                       <li class="days__item">
+                           <h3 class="days__name">Thu</h3>
+                           <img src="../images/sun-cloud-small.svg" alt="sun-cloud icon" class="days__weather">
+                           <p class="days__temperature">14&#176;</p>
+                       </li>
+                   </ul>
+               </li>
+               <li class="cities-weather__item cities-weather__item--san_jose">
+                   <img src="../images/cloud.svg" alt="cloud icon" class="cities-weather__img cities-weather__img--cloud">
+                   <p class="cities-weather__name-tempr">San Jose/47&#176;</p>
+               </li>
+           </ul>
+       </article>
+   </div>
+</body>
+</html>

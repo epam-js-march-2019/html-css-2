@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="21px" viewBox="0 0 23 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Combined shape 150</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M20.57195,37.631636 L20.0542,37.631636 C20.0542,36.920926 19.888825,36.211514 19.565625,35.5606 L20.57195,35.5606 C22.859575,35.5606 24.71405,33.706132 24.71405,31.418484 C24.71405,29.13088 22.859575,27.276412 20.57195,27.276412 C19.74335,27.276412 18.9754,27.525672 18.32795,27.944772 C17.6901,25.191626 15.2349,23.134296 12.28775,23.134296 C8.85635,23.134296 6.074625,25.91602 6.074625,29.34747 C6.074625,32.429824 8.321575,34.9809 11.265375,35.469454 C10.93535,36.099226 10.7638,36.788728 10.741625,37.482168 C6.906175,36.757268 4.003575,33.393666 4.003575,29.34747 C4.003575,24.772218 7.71255,21.06326 12.28775,21.06326 C15.39675,21.06326 18.102075,22.778226 19.5191,25.311482 C19.86295,25.252522 20.211325,25.205354 20.57195,25.205354 C24.0034,25.205354 26.7851,27.987078 26.7851,31.418484 C26.7851,34.849934 24.0034,37.631636 20.57195,37.631636 Z M15.39435,33.970528 L17.224925,35.801082 C18.235925,36.812048 18.235925,38.451202 17.224925,39.462212 C16.2139,40.4732 14.574775,40.4732 13.563775,39.462212 C12.5528,38.451202 12.5528,36.812048 13.563775,35.801082 L15.39435,33.970528 Z" id="path-1"></path>
+        <filter x="2.0%" y="2.6%" width="95.1%" height="96.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.8627451   0 0 0 0 0.23921569   0 0 0 0 0.4  0 0 0 0.75 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-327.000000, -448.000000)">
+            <g id="Group-2" transform="translate(93.000000, 94.000000)">
+                <g id="Group-1">
+                    <g id="Group-6" transform="translate(230.000000, 333.000000)">
+                        <g id="Combined-shape-150">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

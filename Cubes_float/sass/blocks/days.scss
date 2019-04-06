@@ -1,0 +1,40 @@
+
+.days__list {
+    background-color: $dark-crimson;
+    box-shadow: inset 0px 0px 35px -17px #272425;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50%;
+    padding: 14px 10px 10px;
+    font-size: 12px;
+}
+
+.days__item {
+    margin: 0 7px;
+    float: left;
+}
+
+.days__name {
+    margin: 0;
+}
+
+.days__temperature {
+    margin: 0;
+    text-align: center;
+}
+
+.days__img--wind {
+   display: block;
+   margin: 15px auto 19px;
+}
+
+.days__weather {
+    display: block;
+    margin: 0 auto;
+    &--rain {
+        padding-top: 2px;
+    }
+    &--cloud {
+        padding-top: 4px;
+    }
+}
