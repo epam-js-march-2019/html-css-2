@@ -1,4 +1,77 @@
 @import "vars";
 
+@media screen and (max-width: 600px) {
+
+	:root {
+		font-size: 8px;
+	}
+
+	.widget__forecast {
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.widget {
+		width: 50rem;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	:root {
+		font-size: 7px;
+	}
+
+	.widget {
+		width: 38.2rem;
+		min-width: 25rem;
+		line-height: 1rem;
+		grid-template:
+		"today" 1fr
+		"forecast" 0.8fr /
+		1fr;
+
+		&__today {
+			grid-template: 
+			"weather-icon" 2.3fr
+			"current-weather" 0.9fr
+			"current-city" 1fr / 1fr;
+		}
+	
+		&__forecast {
+			grid-template: 
+			"temperature graph" 0.3fr
+			"weekdays weekdays" 0.5fr / 
+			1fr 0.6fr;
+		}
+	
+		&__day {
+			grid-template: 
+			"ico" 5rem
+			"day" 8.3rem
+			"daytemp" 2.4rem
+			"nighttemp" 3.5rem / 1fr;
+		}
+
+		&__temperature {
+			border-top: 1px solid #771921;
+			border-bottom: 1px solid #771921;
+		}
+
+		&__weekday {
+			font-size: 3rem;
+		}
+
+		&__daytime-temp {
+			font-size: 2rem;
+		}
+
+		&__nightime-temp {
+			font-size: 2rem;
+		}
+	}
+}
+
 
 

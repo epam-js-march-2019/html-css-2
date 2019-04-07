@@ -6,17 +6,24 @@
   box-sizing: border-box;
 }
 
+:root {
+	font-size: 10px;
+}
+
 body {
   color: $text-accent;
   width: 100vw;
   height: 100vh;
-  background-image: url("../img/bg2.png");
+  background-image: url("../img/bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%, cover;
   background-origin: content-box;
-  font-size: 15px;
-  font-family: LatoLight;
+  font-size: 1.5rem;
+	font-family: DosisLight;
+	padding: 3rem;
+	position: relative;
+	color: $text-accent;
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -32,5 +39,160 @@ body {
   overflow: hidden;
 }
 
+.widget {
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	width: 58.2rem;
+	min-width: 45rem;
+	outline: none;
+	border: none;
+	background-color: #ffffff; 
+	border-radius: 3px;
+	display: grid;
+	grid-template:
+		"today forecast" 1fr /
+		1fr 1fr;
+
+	&__today {
+		background-image: url("../img/slider-bg.jpg");
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		border-top-left-radius: 3px;
+		border-bottom-left-radius: 4px;
+		color: #ffffff;
+		display: grid;
+		grid-area: today;
+		grid-template: 
+			"weather-icon" 2.3fr
+			"current-weather" 0.9fr
+			"current-city" 1fr / 1fr;
+	}
+
+	&__weather-icon {
+		margin: auto;
+		grid-area: weather-icon;
+		padding-top: 0rem;
+	}
+
+	&__current-weather {
+		@include clear;
+		grid-area: current-weather;
+		width: 100%;
+		line-height: 9.4rem;
+		text-align: center;
+		background-color: rgba(46, 28, 37, 0.8);
+		font-family: DosisExtraLight;
+		font-size: 3.6rem;
+	}
+
+	&__current-city {
+		@include clear;
+		grid-area: current-city;
+		width: 100%;
+		text-align: center;
+		background-color: rgba(119, 25, 33, 0.8);
+		border-bottom-left-radius: 3px;
+		font-family: DosisLight;
+		font-size: 2.2rem;
+		line-height: 10.4rem;
+	}
+
+	&__forecast {
+		background-color: #ffffff;
+		border-top-right-radius: 3px;
+		border-bottom-right-radius: 3px;
+		display: grid;
+		margin-left: 3.5rem;
+		margin-right: 3.5rem;
+		grid-area: forecast;
+		grid-template: 
+			"temperature" 0.72fr
+			"graph" 0.5fr
+			"weekdays" 1fr / 1fr;
+	}
+
+	&__weekdays {
+		@include clear;
+		grid-area: weekdays;
+		display: grid;
+		grid-template: 
+			"thu fri sat" 1fr /
+			1fr 1fr 1fr;
+	}
+
+	&__day {
+		@include clear;
+		text-align: center;
+		display: grid;
+		padding: 1rem 0rem 0rem 0rem;
+		grid-template: 
+		"ico" 4.4rem
+		"day" 6.3rem
+		"daytemp" 2.4rem
+		"nighttemp" 3.5rem / 1fr;
+		margin: 1rem 1.5rem;
+		&--thu {
+			grid-area: thu;
+		}
+		&--fri {
+			grid-area: fri;
+		}
+		&--sat {
+			grid-area: sat;
+		}
+	}
+
+	&__weekday {
+		border-bottom: 1px solid #771921;
+		font-family: DosisBook;
+		font-size: 1.6rem;
+		line-height: 3.3rem;
+		grid-area: day;
+	}
+
+	&__overcast-icon {
+		margin: 0 auto;
+		grid-area: ico;
+	}
+
+	&__daytime-temp {
+		@include clear;
+		text-align: center;
+		font-size: 1.6rem;
+		line-height: 2.2rem;
+		grid-area: daytemp;
+	}
+
+	&__nightime-temp {
+		@include clear;
+		text-align: center;
+		font-size: 1.6rem;
+		line-height: 2.7rem;
+		color: #000000;
+		grid-area: nighttemp;
+	}
+
+	&__temperature {
+		padding: 2.7rem 0.19rem 0.5rem 0rem;
+		grid-area: temperature;
+		font-size: 10rem;
+		line-height: 10rem;
+		font-family: DosisExtraLight;
+		text-align: center;
+		border-top-right-radius: 3px;
+	}
+
+	&__graph {
+		grid-area: graph;
+		background-image: url("../img/graph.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		border-top: 1px solid #771921;
+		border-bottom: 1px solid #771921;
+	}
+}
 // ======media queries============
 @import "media";
