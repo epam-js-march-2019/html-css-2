@@ -2,6 +2,7 @@ var syntax = "scss", // Syntax: sass or scss;
 	gulpversion = "4"; // Gulp version: 3 or 4
 
 var gulp = require("gulp"),
+	postcss = require('gulp-postcss'),
 	gutil = require("gulp-util"),
 	sass = require("gulp-sass"),
 	browserSync = require("browser-sync"),
@@ -9,7 +10,7 @@ var gulp = require("gulp"),
 	uglify = require("gulp-uglify"),
 	cleancss = require("gulp-clean-css"),
 	rename = require("gulp-rename"),
-	autoprefixer = require("gulp-autoprefixer"),
+	autoprefixer = require("autoprefixer"),
 	notify = require("gulp-notify"),
 	rsync = require("gulp-rsync");
 
@@ -30,6 +31,7 @@ gulp.task("styles", function() {
 	.pipe(sass({ outputStyle: 'expanded' }).on("error", notify.onError()))
 	.pipe(rename({ suffix: '.min', prefix : '' }))
 	// .pipe(autoprefixer(['last 15 versions']))
+	.pipe(postcss([ autoprefixer({ grid: true, browsers: ['>1%'] }) ]))
 	.pipe(cleancss( {level: { 1: { specialComments: 0 } } })) // Opt., comment out when debugging
 	.pipe(gulp.dest('app/css'))
 	.pipe(browserSync.stream())
