@@ -3,7 +3,7 @@
 ## О проекте.
 - [Cubes](https://aleksandrgorodetskii.github.io/html-css-2/Cubes/app/) - верстка с помощью float.
 - [Paris](https://aleksandrgorodetskii.github.io/html-css-2/Paris/app/) - верстка с помощью flexbox.
-- Tokyo - верстка с помощью grid (work in progress).
+- [Tokyo](https://aleksandrgorodetskii.github.io/html-css-2/Tokyo/app/)  - верстка с помощью grid.
 
 ### В работе были использованы.
 
