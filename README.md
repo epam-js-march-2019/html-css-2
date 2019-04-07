@@ -1,12 +1,9 @@
-# Homework #1. HTML, CSS.
-
 ## О проекте.
 - [Cubes](https://aleksandrgorodetskii.github.io/html-css-2/Cubes/app/) - верстка с помощью float.
 - [Paris](https://aleksandrgorodetskii.github.io/html-css-2/Paris/app/) - верстка с помощью flexbox.
 - [Tokyo](https://aleksandrgorodetskii.github.io/html-css-2/Tokyo/app/)  - верстка с помощью grid.
 
-### В работе были использованы.
-
+## В работе были использованы.
 - Gulp - сборка проекта.
 - Sass (в синтаксисе scss) - работа со стилями.
 - Autoprefixer - поддержка IE11.
@@ -14,8 +11,8 @@
 - Normalize.css - нормализация дефолтных стилей.
 
 
+# Homework #1. HTML, CSS.
 ## О задании.
-
 ### Part 1.
 
 1. Ознакомиться с предложенными материалами (очень желательно пройти интерактивный курс по разметке и вводным темам по `HTML` и `CSS` на [HTML Academy](https://htmlacademy.ru/));
