@@ -25,6 +25,16 @@ body {
 }
 
 /**
+ * Remove list style in all browsers.
+ */
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/**
  * Render the `main` element consistently in IE.
  */
 
