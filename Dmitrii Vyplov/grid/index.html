@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Tokyo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="../normilize.css">
+  <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400" rel="stylesheet">
+</head>
+<body>
+  <article class="weather-widget">
+    <h2 class="weather-widget__main-title_visually-hidden">Weather widget</h2>
+    <section class="weather-general">
+      <h3 class="weather-general__main-title_visually-hidden">Сurrent weather, city and date unit</h3>
+      <img class="weather-general__weather-image" src="../img/sun_copy.svg" alt="Sun image">
+      <div class="weather-general__current-weather-container">
+        <p class="weather-general__current-weather-content">Sunny</p>
+      </div>
+      <div class="weather-general__calender-container">
+        <p class="weather-general__calender-content">Tokyo - Wednesday, July 31</p>
+      </div>
+    </section>
+    <section class="temp-details">
+      <h3 class="temp-details__main-title_visually-hidden"> Current temperature, temperature diagram and day temperature list</h3>
+      <div class="temp-details__content-wrapper">
+        <div class="temp-details__current-temp-container">
+          <p class="temp-details__current-temp-content">28 &deg;C</p>
+        </div>
+        <img class="temp-details__diagram-image" src="../img/diagram.svg" alt="Temperature diagram">
+        <ul class="temp-details__temp-list">
+          <li class="temp-details__temp-item temp-details__temp-item-left">
+            <p class="temp-details__day-name temp-details__day-sunny ">Thu</p>
+            <p class="temp-details__max-temp">28&deg;C</p>
+            <p class="temp-details__min-temp">18&deg;C</p>
+          </li>
+          <li class="temp-details__temp-item temp-details__temp-item-center">
+            <p class="temp-details__day-name temp-details__day-cloud">Fri</p>
+            <p class="temp-details__max-temp">22&deg;C</p>
+            <p class="temp-details__min-temp">20&deg;C</p>
+          </li>
+          <li class="temp-details__temp-item temp-details__temp-item-right">
+            <p class="temp-details__day-name temp-details__day-cloud">Sat</p>
+            <p class="temp-details__max-temp">30&deg;C</p>
+            <p class="temp-details__min-temp">27&deg;C</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </article>
+</body>
+</html>
