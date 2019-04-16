@@ -1,5 +1,5 @@
 ## О проекте.
-- [Cubes](https://aleksandrgorodetskii.github.io/html-css-1/Aleksandr_Gorodetskii/Cubes/app/) - верстка с помощью float.
+- [Cubes](https://aleksandrgorodetskii.github.io/html-css-2/Aleksandr_Gorodetskii/Cubes/app/) - верстка с помощью float.
 - [Paris](https://aleksandrgorodetskii.github.io/html-css-2/Aleksandr_Gorodetskii/Paris/app/) - верстка с помощью flexbox.
 - [Tokyo](https://aleksandrgorodetskii.github.io/html-css-2/Aleksandr_Gorodetskii/Tokyo/app/)  - верстка с помощью grid.
 
