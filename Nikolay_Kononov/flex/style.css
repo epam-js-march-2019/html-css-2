@@ -1,0 +1,163 @@
+@font-face {
+    font-family: AvenirNext;
+    src: url(../font/AvenirNext-Bold.ttf);
+}
+
+
+body{
+    /*background*/
+    background: url("../img/main-bg.jpg") center no-repeat;
+    background-size: cover;
+
+    /*font*/
+    color: white;
+    font-family: AvenirNext;
+    font-weight: bold;
+    display: flex;
+    align-items: flex-end;
+
+}
+
+
+.main{
+        /*props*/
+    min-width: 205px;
+    max-width: 615px;
+    height: auto;
+    margin: 100px auto;
+
+        /*display: ;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-widget{
+    width: 615px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    box-shadow:  0 5px 10px 0 rgba(0, 0, 0, 0.5), 0 8px 20px 0 rgba(0, 0, 0, 0.8);
+}
+
+.main-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 205px;
+    height: 205px;
+    box-sizing: border-box;
+    font-size: 16px;
+    overflow: hidden;
+    vertical-align: center;
+
+}
+
+.city-temperature{
+    margin-top: 30px;
+}
+
+.image-weather{
+
+    width: 90px;
+    height: 88px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.days-table{
+    font-size: 12px;
+    height: 50%;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #b83457;
+    margin-bottom: 0;
+    margin-top: auto;
+}
+
+
+
+.chicago {
+    background-color: #06b3db;
+}
+
+.seattle{
+    background-color: #4ed486;
+}
+
+.brooklyn{
+    background-color: #6139f6;
+}
+
+.portland{
+    background-color: #e3b63d;
+}
+
+.days{
+    background-color: #dc3d66;
+
+}
+
+.san-jose{
+    background-color: #bd54cd;
+}
+
+.days .image-weather{
+    margin: 20px auto;
+    width: 63px;
+    height: 63px;
+}
+
+
+
+
+
+
+@media only screen
+    and (max-width: 767px){
+
+    .main{
+        width: 205px;
+    }
+
+    .weather-widget{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+        display: flex;
+        flex-direction: column;
+        flex-flow: wrap;
+        width: 205px;
+        min-height: auto;
+
+        font-weight: bold;
+        color: white;
+    }
+}
+
+@media only screen
+and (min-width: 768px)
+and (max-width: 1024px){
+
+    .main{
+        width: 205px;
+    }
+
+    .weather-widget {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 205px;
+        min-height: auto;
+
+        font-weight: bold;
+        color: white;
+    }
+}
+
